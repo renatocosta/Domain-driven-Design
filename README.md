@@ -1,2 +1,3 @@
 # picpay-domain-driven-design-sample
-Domain-Driven Design na prática
+Repositório com o propósito específico para demonstrar o uso do Domain-Driven Design.
+A idéia é alinhar o código com o negócio da empresa.
