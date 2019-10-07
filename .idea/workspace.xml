@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Entity/PurchaseOrderCreated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/AbstractEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBusInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/Locator/EventListenerLocatorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Event/EventTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product.Domain.Tests/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Application/Controllers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Commands/ItemCommands/Inputs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Commands/ItemCommands/Outputs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Entities/Aggregate/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Entities/ValueObjects/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Enums/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Events/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Handlers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Queries/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Repositories/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Domain/Specs/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/MessageBroker/Kafka/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Services/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Transaction/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductBoundedContext/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedKernel/.gitkeep" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RpxWmrUVdc113n08VPBAMbjn1v" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/SharedKernel/Event" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel" />
+      <recent name="$PROJECT_DIR$/tests/SharedKernel/ValueObjects/Identifier" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Indentifier" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/SharedKernel/Event" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Entity" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identifier" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="" />
+      <created>1570377872193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570377872193</updated>
+      <workItem from="1570377876498" duration="28537000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
