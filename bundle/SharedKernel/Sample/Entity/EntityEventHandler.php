@@ -2,27 +2,29 @@
 
 namespace SharedKernel\Sample\Entity;
 
-use SharedKernel\Event\AbstractEvent;
-use SharedKernel\Event\DomainEventHandler;
+use SharedKernel\Model\Event\AbstractEvent;
+use SharedKernel\Model\Event\DomainEventHandler;
 
 class EntityEventHandler implements DomainEventHandler
 {
 
-    private $eventName;
+    private $aggregateRootDispatcher;
 
-    public function __construct(string $eventName)
+    public function __construct($aggregateRootDispatcher)
     {
-        $this->eventName = $eventName;
+        $this->aggregateRootDispatcher = $aggregateRootDispatcher;
     }
 
     public function handle(AbstractEvent $aDomainEvent): void
     {
-
+        //Put here some dispatcher to call another aggregate root
+        //$aDomainEvent->getId()
+        //$this->aggregateRootDispatcher->dispatch();
     }
 
     public function isSubscribedTo(AbstractEvent $aDomainEvent): bool
     {
-        return $aDomainEvent->getEventName() === $this->eventName;
+        return $aDomainEvent instanceof EntityWasCreated;
     }
 
 }

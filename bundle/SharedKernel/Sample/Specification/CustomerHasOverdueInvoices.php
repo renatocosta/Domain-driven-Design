@@ -2,7 +2,7 @@
 
 namespace SharedKernel\Sample\Specification;
 
-use SharedKernel\Specification\CompositeSpecification;
+use SharedKernel\Model\Specification\CompositeSpecification;
 
 final class CustomerHasOverdueInvoices extends CompositeSpecification
 {

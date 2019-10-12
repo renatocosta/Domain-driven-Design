@@ -10,13 +10,13 @@
          syntaxCheck="false">
     <testsuites>
         <testsuite name="ValueObjects">
-            <directory suffix="Test.php">./tests/SharedKernel/ValueObjects</directory>
+            <directory suffix="Test.php">./tests/SharedKernel/Model/ValueObjects</directory>
         </testsuite>
         <testsuite name="Events">
-            <directory suffix="Test.php">./tests/SharedKernel/Event</directory>
+            <directory suffix="Test.php">./tests/SharedKernel/Model/Event</directory>
         </testsuite>
         <testsuite name="Specification">
-            <directory suffix="Test.php">./tests/SharedKernel/Specification</directory>
+            <directory suffix="Test.php">./tests/SharedKernel/Model/Specification</directory>
         </testsuite>
     </testsuites>
     <filter>

@@ -2,8 +2,8 @@
 
 namespace SharedKernel\Sample\Entity;
 
-use SharedKernel\Event\AbstractEvent;
-use SharedKernel\ValueObjects\Identity\Identified;
+use SharedKernel\Model\Event\AbstractEvent;
+use SharedKernel\Model\ValueObjects\Identity\Identified;
 
 class EntityWasCreated extends AbstractEvent
 {
