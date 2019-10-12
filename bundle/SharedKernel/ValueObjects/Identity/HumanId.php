@@ -2,7 +2,7 @@
 
 namespace SharedKernel\ValueObjects\Identity;
 
-final class HumanId extends Identifier
+final class HumanId extends Identified
 {
 
     private $id;
@@ -12,7 +12,7 @@ final class HumanId extends Identifier
         $this->id = $id;
     }
 
-    public static function fromInteger(int $id): Identifier
+    public static function fromInteger(int $id): Identified
     {
         return new self($id);
     }

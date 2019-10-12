@@ -2,22 +2,24 @@
 
 namespace SharedKernel\Event;
 
-/**
- * Domain Events happen an Aggregate is modified.
- *
- * They are assumed be immutable objects that cannot change after instantiation.
- * Changing events can cause weird problems, so avoid this.
- */
+use SharedKernel\ValueObjects\Identity\Identified;
+
 interface EventInterface
 {
+
     /**
-     * @param mixed $aggregateRootId
-     *
-     * @throws RuntimeException When setting an aggregate id where one already exists.
+     * @return Identified
      */
-    public function setAggregateRootId($aggregateRootId);
+    public function getId(): Identified;
+
     /**
-     * @return mixed
+     * @return string
      */
-    public function getAggregateRootId();
+    public function getEventName(): string;
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function createdAt(): \DateTimeImmutable;
+
 }

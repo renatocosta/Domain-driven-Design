@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Entity/PurchaseOrderCreated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/AbstractEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBusInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/Locator/EventListenerLocatorInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Event/EventTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product.Domain.Tests/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Application/Controllers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Commands/ItemCommands/Inputs/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Commands/ItemCommands/Outputs/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Entities/Aggregate/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Entities/ValueObjects/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Enums/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Events/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Handlers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Queries/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Repositories/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Domain/Specs/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/MessageBroker/Kafka/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Services/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Infrastructure/Transaction/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductBoundedContext/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharedKernel/.gitkeep" beforeDir="false" />
+    <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
+      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Event/Bus/EventBusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Entity/Entity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Entity/PurchaseOrderCreated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Entity/SendEmailOnPurchaseOrderCreated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/AbstractEvent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/EventBusInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/EventInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerCollection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/EventListenerInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/Locator/EventListenerLocator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Listener/Locator/EventListenerLocatorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Utils/EventName.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/AggregateRoot.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/AggregateRoot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Guid.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Guid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/HumanId.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/HumanId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Identifier.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Identified.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Event/EventTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/ValueObjects/Identity/GuidTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/ValueObjects/Identity/GuidTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assert.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/Assertion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/AssertionChain.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/AssertionChain.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/AssertionFailedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/AssertionFailedException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/InvalidArgumentException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/InvalidArgumentException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/LazyAssertion.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/LazyAssertion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/LazyAssertionException.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/LazyAssertionException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/lib/Assert/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beberlei/assert/phpstan-code.neon" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beberlei/assert/phpstan-code.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +47,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -52,26 +62,69 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/beberlei/assert" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1RpxWmrUVdc113n08VPBAMbjn1v" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/SharedKernel/Event" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel" />
-      <recent name="$PROJECT_DIR$/tests/SharedKernel/ValueObjects/Identifier" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Indentifier" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Specification" />
+      <recent name="$PROJECT_DIR$/tests/SharedKernel/Specification" />
       <recent name="$PROJECT_DIR$/tests/SharedKernel/Event" />
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Entity" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identifier" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/sample" />
+      <recent name="$PROJECT_DIR$/tests/SharedKernel/Event/Bus" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Entity" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,6 +139,12 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -96,7 +155,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570377872193</updated>
-      <workItem from="1570377876498" duration="28537000" />
+      <workItem from="1570377876498" duration="29933000" />
+      <workItem from="1570462390513" duration="47265000" />
     </task>
     <servers />
   </component>
@@ -108,7 +168,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

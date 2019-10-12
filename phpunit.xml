@@ -15,6 +15,9 @@
         <testsuite name="Events">
             <directory suffix="Test.php">./tests/SharedKernel/Event</directory>
         </testsuite>
+        <testsuite name="Specification">
+            <directory suffix="Test.php">./tests/SharedKernel/Specification</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">

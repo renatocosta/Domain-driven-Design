@@ -2,35 +2,52 @@
 
 namespace SharedKernel\Event;
 
+use SharedKernel\ValueObjects\Identity\Identified;
+
 abstract class AbstractEvent implements EventInterface
 {
+
     /**
-     * @var mixed
+     * @var $aggregateRootIdentifier
      */
-    private $aggregateRootId;
+    protected $aggregateRootIdentifier;
+
     /**
-     * @param mixed $aggregateRootId
-     *
-     * @throws RuntimeException When setting an aggregate id where one already exists.
+     * @var string
      */
-    public function setAggregateRootId($aggregateRootId)
+    private $eventName;
+
+    /**
+     * @var \DateTimeImmutable
+     */
+    private $createdAt;
+    
+    public function __construct(Identified $aggregateRootIdentifier)
     {
-        if (null !== $this->aggregateRootId && $aggregateRootId !== $this->aggregateRootId) {
-            $eventName = new EventName($this);
-            throw new RuntimeException(
-                sprintf(
-                    'Event %s: The aggregate root id is already set and is different from the one given.',
-                    $eventName
-                )
-            );
-        }
-        $this->aggregateRootId = $aggregateRootId;
+        $this->aggregateRootIdentifier = $aggregateRootIdentifier;
+        $this->setEventName();
+        $this->createdAt = new \DateTimeImmutable();
     }
-    /**
-     * @return mixed
-     */
-    public function getAggregateRootId()
+
+    public function getId(): Identified
     {
-        return $this->aggregateRootId;
+        return $this->aggregateRootIdentifier;
     }
+
+    private function setEventName(): void
+    {
+        $path = explode('\\', get_class($this));
+        $this->eventName = array_pop($path);
+    }
+
+    public function getEventName(): string
+    {
+        return $this->eventName;
+    }
+
+    public function createdAt(): \DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+    
 }

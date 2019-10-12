@@ -1,93 +1,42 @@
 <?php
 
-namespace SharedKernel\ValueObjects;
+namespace SharedKernel\Event\ValueObjects;
 
 use SharedKernel\Event\EventInterface;
-use SharedKernel\Event\Utils\EventName;
-use SharedKernel\Exception\BadMethodCallException;
-use SharedKernel\ValueObjects\Identity\Identifier;
+use SharedKernel\Event\Bus\DomainEventBus;
+use SharedKernel\ValueObjects\Identity\Identified;
 
 abstract class AggregateRoot
 {
 
     /**
-     * @var int
+     * @var Identified
      */
-    protected $id;
+    protected $aggregateRootIdentifier;
 
-    /**
-     * List of events that occurred.
-     *
-     * @var EventInterface[]
-     */
-    private $events = array();
-
-    /**
-     * @return int
-     */
-    public function getId()
+    protected function __construct(Identified $aggregateRootIdentifier)
     {
-        return $this->id;
+        $this->aggregateRootIdentifier = $aggregateRootIdentifier;
     }
 
-    /**
-     * This allows you to get every events raised by the aggregate and clear the stack.
-     * It's helpful when you do event sourcing because once an event is raised you may need to do some actions in other
-     * bounded contexts. So the events is fired once.
-     *
-     * @return EventInterface[]
-     */
-    public function pullEvents()
+    public function getId(): Identified
     {
-        $this->safelyPopulateEventsWithAggregateId();
-        $events       = $this->events;
-        $this->events = array();
-        return $events;
+        return $this->aggregateRootIdentifier;
     }
 
-    /**
-     * Used when somebody is trying to modify an Aggregate.
-     * You should check that the input is good then create an event and call this method.
-     *
-     * @param EventInterface $event
-     */
-    protected function apply(EventInterface $event)
+    final public function equals(Identified $aggregateRootIdentifier): bool
     {
-        $this->executeEvent($event);
-        $this->events[] = $event;
+        return $this->aggregateRootIdentifier->equals($aggregateRootIdentifier);
     }
 
-    /**
-     * @param EventInterface $event
-     *
-     * @throws BadMethodCallException
-     */
-    private function executeEvent(EventInterface $event)
+    final protected function apply(EventInterface $event): void
     {
-        $eventName = new EventName($event);
-        $method    = sprintf('apply%s', (string) $eventName);
-        if (!method_exists($this, $method)) {
-            throw new BadMethodCallException(
-                sprintf(
-                    'You must define the %s::%s method(%s $event) in order to apply event named "%s". ',
-                    get_class($this),
-                    $method,
-                    get_class($event),
-                    $eventName
-                )
-            );
-        }
-
-        $this->$method($event);
+        DomainEventBus::instance()->publish($event);
     }
 
-    private function safelyPopulateEventsWithAggregateId()
+    public function __toString(): string
     {
-        foreach ($this->events as $event) {
-            if (null === $event->getAggregateRootId()) {
-                $event->setAggregateRootId($this->id);
-            }
-        }
+        return (string) $this->aggregateRootIdentifier->getId();
     }
 
 }

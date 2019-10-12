@@ -2,7 +2,7 @@
 
 namespace SharedKernel\ValueObjects\Identity;
 
-abstract class Identifier
+abstract class Identified
 {
 
     public $id;
@@ -10,12 +10,17 @@ abstract class Identifier
     /**
      * Tells whether two Identity are equal by comparing their values
      *
-     * @param Identifier $identifier
+     * @param Identified $identifier
      * @return bool
      */
-    public function equals(Identifier $identifier): bool
+    public function equals(Identified $identifier): bool
     {
         return $this->id === $identifier->id;
+    }
+
+    public function getId()
+    {
+        return $this->id;
     }
 
     abstract public function __toString(): string;

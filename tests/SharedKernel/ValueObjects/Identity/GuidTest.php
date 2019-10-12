@@ -21,7 +21,6 @@ class GuidTest extends TestCase
 
         $guid = Guid::fromString(Uuid::uuid4()->toString());
         $guid2 = Guid::fromString(Uuid::uuid4()->toString());
-
         $this->assertFalse($guid->equals($guid2));
 
     }

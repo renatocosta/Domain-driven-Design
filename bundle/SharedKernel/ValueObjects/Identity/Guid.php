@@ -4,7 +4,7 @@ namespace SharedKernel\ValueObjects\Identity;
 
 use Assert\Assertion;
 
-final class Guid extends Identifier
+final class Guid extends Identified
 {
 
     private function __construct(string $id)
@@ -13,7 +13,7 @@ final class Guid extends Identifier
         $this->id = $id;
     }
 
-    public static function fromString(string $id): Identifier
+    public static function fromString(string $id): Identified
     {
         return new self($id);
     }
