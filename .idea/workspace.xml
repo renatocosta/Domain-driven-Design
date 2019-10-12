@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Geography/Latitude.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Network/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityWasChanged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Geography/LatitudeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Geography/LongitudeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Identity/EnumTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Network/UrlTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/CommandResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/ICommandResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Customer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Handlers/Customer/CustomerHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Commands/ItemCommands/Inputs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Commands/ItemCommands/Inputs/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Commands/ItemCommands/Outputs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Commands/ItemCommands/Outputs/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Entities/Aggregate/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Entities/Aggregate/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Entities/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Entities/ValueObjects/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Enums/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Enums/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Events/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Events/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Handlers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Handlers/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Queries/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Queries/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Repositories/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Domain/Specs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Product/Model/Model1/Specification/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/Transaction/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/AbstractEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Event/AbstractEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/Bus/DomainEventBus.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Event/Bus/DomainEventBus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/DomainEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Event/DomainEventHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Event/EventInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Event/EventInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Entity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityEventHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityWasCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerHasOverdueInvoices.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerHasOverdueInvoices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsAbleTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsAbleTo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsGold.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsGold.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Specification/AndSpecification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/AndSpecification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Specification/CompositeSpecification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/CompositeSpecification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Specification/NotSpecification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/NotSpecification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Specification/OrSpecification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/OrSpecification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Specification/Specification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/Specification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/AggregateRoot.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/AggregateRoot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Guid.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Identity/Guid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/HumanId.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Identity/HumanId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/ValueObjects/Identity/Identified.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Identity/Identified.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Event/Bus/EventBusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/Event/Bus/EventBusTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Specification/SpecificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/Specification/SpecificationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/ValueObjects/Identity/GuidTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Identity/GuidTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -127,18 +83,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity" />
       <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Network" />
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Network" />
       <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Geography" />
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Geography" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Money" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Commands/Customer/Inputs" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Commands/Customer" />
       <recent name="$PROJECT_DIR$/bundle/Product/Infrastructure/Persistence" />
       <recent name="$PROJECT_DIR$/bundle/Product/Model/Item1" />
       <recent name="$PROJECT_DIR$/tests/SharedKernel/Model" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/sample" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570377872193</updated>
       <workItem from="1570377876498" duration="29933000" />
-      <workItem from="1570462390513" duration="63386000" />
+      <workItem from="1570462390513" duration="70534000" />
     </task>
     <servers />
   </component>
