@@ -40,13 +40,14 @@ class Document extends AggregateRoot
     public function create(StatusId $statusId, string $dueDate, string $barCode): Document
     {
         $this->statusId = $statusId;
-        $this->barCode = $barCode;
 
         try {
-            Assert::that($dueDate, 'DueDate')->notEmpty();
+            Assert::that($dueDate, 'Due Date can not be empty')->notBlank();
+            Assert::that($barCode, 'Bar code can not be empty')->notBlank();
             $this->dueDate = $dueDate;
+            $this->barCode = $barCode;
         } catch(AssertionFailedException $e) {
-            $this->errors[] = $e->getConstraints();
+            $this->errors[] = $e->getMessage();
         }
         $this->isDueDateLessOrEqualThanNow();
 
