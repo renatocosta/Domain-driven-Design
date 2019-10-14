@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/Document.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Bills/Application/UseCase/BillTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Bills/Application/UseCase/BillTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Bills/Application/UseCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/Bills/Model/Refund" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -123,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570377872193</updated>
       <workItem from="1570377876498" duration="29933000" />
-      <workItem from="1570462390513" duration="100293000" />
+      <workItem from="1570462390513" duration="100394000" />
     </task>
     <servers />
   </component>
