@@ -2,7 +2,7 @@
 
 namespace Tests\SharedKernel\Model\ValueObjects\Identifier;
 
-use SharedKernel\Model\ValueObjects\Identity\Enum;
+use SharedKernel\Model\ValueObjects\Identity\FindValueIn;
 use Tests\BaseUnitTestCase;
 
 class EnumTest extends BaseUnitTestCase
@@ -11,14 +11,16 @@ class EnumTest extends BaseUnitTestCase
     public function testShouldThrowInvalidEnumException(): void
     {
         $this->expectException(\Exception::class);
-        new Enum('invalid');
+        new FindValueIn('invalid', ['key' => 222]);
     }
 
     public function testShouldReturnEnumValue(): void
     {
-        $data = Enum::VALID;
-        $value = new Enum($data);
-        $this->assertSame($data, $value->value());
+
+        $acquirer = ['Stone', 'Cielo'];
+        $findIt = 'Cielo';
+        $value = new FindValueIn($findIt, $acquirer);
+        $this->assertSame($findIt, $value->value());
     }
 
 }

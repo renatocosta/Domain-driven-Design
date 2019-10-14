@@ -2,12 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/CommandResult.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/ICommandResult.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Customer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Handlers/Customer/CustomerHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Persistence/Repositories/BillsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Persistence/Repositories/BillsRepositoryInMemory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Services/EmailService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Commands/Inputs/RegisterBillCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/Document.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/ValueObjects/StatusId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Enums/StatusIdEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Factories/DocumentFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Factories/StatusIdFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Handlers/BillsHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Repositories/IBillsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Specification/BarCodeUnique.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CNABManager/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CNABManager/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CoreDomain/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CoreDomain/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CoreDomain/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/CoreDomain/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Deposit/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Deposit/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Deposit/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Deposit/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/GenericDomain/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/GenericDomain/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/GenericDomain/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/GenericDomain/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ProductBoundedContext/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ProductBoundedContext/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ProductBoundedContext/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services/IEmailService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Identity/FindValueIn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SupportDomain/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SupportDomain/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SupportDomain/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SupportDomain/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Bills/Application/UseCase/BillTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/Specification/ISpecification.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Entity.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Entity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Core/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AntiCorruptionLayer/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Application/Controllers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Application/Controllers/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/MessageBroker/Kafka/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/MessageBroker/Kafka/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Infrastructure/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Infrastructure/Services/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Commands/ItemCommands/Inputs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/ValueObjects/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Commands/ItemCommands/Outputs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Enums/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Entities/Aggregate/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Entities/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Handlers/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Enums/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Queries/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Events/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Repositories/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Factories/Item1Factory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Handlers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Services/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Queries/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Specification/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/CNABManager/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Product/Model/Model1/Specification/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/CNABManager/Application/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/CompositeSpecification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/CompositeSpecification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Identity/Enum.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Commands/Customer/Inputs/RegisterCustomerCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/Entity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/Handlers/EntityWasCreatedEventHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityWasChanged.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasChanged.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity/EntityWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasCreated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Handlers/Customer/CustomerHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/Customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerHasOverdueInvoices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsAbleTo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerIsGold.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/CustomerSpecification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/OrderRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Sample/Specification/OrderRepositoryInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Model/Event/Bus/EventBusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/Event/Bus/EventBusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Model/Specification/SpecificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Bills/Model/Specification/SpecificationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Identity/EnumTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Identity/EnumTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +155,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Bills/Application/UseCase" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -83,18 +163,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Entity" />
-      <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Network" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Network" />
-      <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/ValueObjects/Geography" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/ValueObjects/Geography" />
+      <recent name="$PROJECT_DIR$/tests/Bills/Application/UseCase" />
+      <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/Specification" />
+      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Bill/Factories" />
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Bill/Services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Commands/Customer/Inputs" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Sample/Commands/Customer" />
-      <recent name="$PROJECT_DIR$/bundle/Product/Infrastructure/Persistence" />
-      <recent name="$PROJECT_DIR$/bundle/Product/Model/Item1" />
-      <recent name="$PROJECT_DIR$/tests/SharedKernel/Model" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services" />
+      <recent name="$PROJECT_DIR$/bundle/Customer/Infrastructure/Persistence/Repositories" />
+      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Repositories" />
+      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Specification" />
+      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570377872193</updated>
       <workItem from="1570377876498" duration="29933000" />
-      <workItem from="1570462390513" duration="70534000" />
+      <workItem from="1570462390513" duration="98019000" />
     </task>
     <servers />
   </component>

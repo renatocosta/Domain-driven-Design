@@ -15,8 +15,8 @@
         <testsuite name="Events">
             <directory suffix="Test.php">./tests/SharedKernel/Model/Event</directory>
         </testsuite>
-        <testsuite name="Specification">
-            <directory suffix="Test.php">./tests/SharedKernel/Model/Specification</directory>
+        <testsuite name="AllOf">
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
