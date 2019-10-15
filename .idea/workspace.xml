@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
+      <change afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Scopes/DocumentScopes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Entities/Document.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasChanged.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasChanged.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/DocumentWasCreated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/Handlers/EntityWasCreatedEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Events/Handlers/DocumentWasCreatedEventHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Handlers/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Handlers/BillsHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Handlers/BillsHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Repositories/IBillsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Bills/Model/Bill/Repositories/IBillsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services/IEmailService.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services/IEmailService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Transaction/IUnitOfWorkContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Transaction/IUnitOfWorkContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/Specification.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Specification/Specification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Bills/Application/UseCase/BillTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Bills/Application/UseCase/BillTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Model/Event/Bus/EventBusTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SharedKernel/Model/Specification/ISpecification.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +28,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -70,7 +88,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/Bills/Model/Refund" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Bills/Model/Event/Bus" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -78,11 +96,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Bills/Model/Event/Bus" />
+      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Bill" />
+      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Refund" />
+      <recent name="$PROJECT_DIR$/bundle/Bills/Model/BarCode" />
       <recent name="$PROJECT_DIR$/tests/Bills/Application/UseCase" />
-      <recent name="$PROJECT_DIR$/tests/SharedKernel/Model/Specification" />
-      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Bill/Factories" />
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/bundle/Bills/Model/Bill/Services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services" />
@@ -122,6 +140,9 @@
       <updated>1570377872193</updated>
       <workItem from="1570377876498" duration="29933000" />
       <workItem from="1570462390513" duration="100394000" />
+      <workItem from="1571014440209" duration="121000" />
+      <workItem from="1571100890459" duration="32000" />
+      <workItem from="1571152813766" duration="14580000" />
     </task>
     <servers />
   </component>

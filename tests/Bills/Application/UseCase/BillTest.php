@@ -15,7 +15,10 @@ class BillTest extends BaseUnitTestCase
    public function testShouldAdd()
     {
 
-        $command = new RegisterBillCommand('0987987289789278972', '2019-12-20');
+        $dtActual = date('Y-m-d');
+        $dueDate = date('Y-m-d', strtotime($dtActual. ' + 1 month'));
+
+        $command = new RegisterBillCommand('0987987289789278972', $dueDate);
         $mockBillsRepository = \Mockery::mock('Bills\Infrastructure\Persistence\Repositories\BillsRepository')->makePartial();
         $mockBillsRepository->shouldReceive('countFor')
             ->once()
@@ -34,8 +37,10 @@ class BillTest extends BaseUnitTestCase
     {
 
         $totalBarcodeInDb = 1;
+        $dtActual = date('Y-m-d');
+        $dueDate = date('Y-m-d', strtotime($dtActual. ' - 2 month'));
 
-        $command = new RegisterBillCommand('0987987289789278972', '2019-12-20');
+        $command = new RegisterBillCommand('0987987289789278972', $dueDate);
         $mockBillsRepository = \Mockery::mock('Bills\Infrastructure\Persistence\Repositories\BillsRepository')->makePartial();
         $mockBillsRepository->shouldReceive('countFor')
             ->once()
@@ -54,8 +59,10 @@ class BillTest extends BaseUnitTestCase
     {
 
         $totalBarcodeInDb = 1;
+        $dtActual = date('Y-m-d');
+        $dueDate = date('Y-m-d', strtotime($dtActual. ' - 8 month'));
 
-        $command = new RegisterBillCommand('', '2019-01-01');
+        $command = new RegisterBillCommand('', $dueDate);
         $mockBillsRepository = \Mockery::mock('Bills\Infrastructure\Persistence\Repositories\BillsRepository')->makePartial();
         $mockBillsRepository->shouldReceive('countFor')
             ->once()

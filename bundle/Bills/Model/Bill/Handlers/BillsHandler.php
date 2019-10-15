@@ -45,7 +45,7 @@ class BillsHandler
         $status = StatusIdFactory::create();
         $document = DocumentFactory::create($status, $command->getDueDate(), $command->getBarCode());
 
-        if ($document->hasErrors()) {
+        if (!$document->isValid()) {
             return new CommandResult(false, 'Algumas incosistências foram identificadas', $document->fetchErrors());
         }
 

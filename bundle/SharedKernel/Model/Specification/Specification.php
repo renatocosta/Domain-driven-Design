@@ -2,6 +2,10 @@
 
 namespace SharedKernel\Model\Specification;
 
+/**
+ * Interface it is for create a specification that is able to tell if a candidate object matches some criteria.
+ * The specification has a method isSatisfiedBy (anObject) : Boolean that returns true if all criteria are met by anObject.
+ */
 interface Specification
 {
 

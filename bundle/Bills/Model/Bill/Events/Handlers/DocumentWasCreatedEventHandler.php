@@ -1,11 +1,11 @@
 <?php
 
-namespace SharedKernel\Sample\Entity;
+namespace Bills\Model\Bills\Entity;
 
 use SharedKernel\Model\Event\AbstractEvent;
 use SharedKernel\Model\Event\DomainEventHandler;
 
-class EntityWasCreatedEventHandler implements DomainEventHandler
+class DocumentWasCreatedEventHandler implements DomainEventHandler
 {
 
     private $aggregateRootDispatcher;

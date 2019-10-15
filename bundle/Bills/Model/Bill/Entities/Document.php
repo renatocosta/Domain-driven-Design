@@ -2,12 +2,11 @@
 
 namespace Bills\Model\Bill\Entities;
 
-use Assert\Assert;
-use Assert\AssertionFailedException;
 use Bills\Model\Bill\Entities\ValueObjects\StatusId;
+use Bills\Model\Bill\Scopes\DocumentScopes;
+use Bills\Model\Bills\Entity\DocumentWasCreated;
 use SharedKernel\Model\Event\ValueObjects\AggregateRoot;
 use SharedKernel\Model\ValueObjects\Identity\Identified;
-use SharedKernel\Sample\Entity\DocumentWasCreated;
 
 class Document extends AggregateRoot
 {
@@ -28,6 +27,11 @@ class Document extends AggregateRoot
     private $barCode;
 
     /**
+     * @var DocumentScopes
+     */
+    private $scope;
+
+    /**
      * @var array
      */
     private $errors;
@@ -37,25 +41,23 @@ class Document extends AggregateRoot
         parent::__construct($aggregateRootIdentifier);
     }
 
-    public function create(StatusId $statusId, string $dueDate, string $barCode): Document
+    public function create(StatusId $statusId, string $dueDate, string $barCode)
     {
         $this->statusId = $statusId;
+        $this->dueDate = $dueDate;
+        $this->barCode = $barCode;
 
-        try {
-            Assert::that($dueDate, 'Due Date can not be empty')->notBlank();
-            Assert::that($barCode, 'Bar code can not be empty')->notBlank();
-            $this->dueDate = $dueDate;
-            $this->barCode = $barCode;
-        } catch(AssertionFailedException $e) {
-            $this->errors[] = $e->getMessage();
+        $this->scope = new DocumentScopes();
+        $this->scope->createScopeIsValid($this);
+        $this->checkDueDateLessOrEqualThanNow();
+
+        if (!$this->isValid()) {
+           return;
         }
-        $this->isDueDateLessOrEqualThanNow();
 
         $this->apply(
-            new DocumentWasCreated($this->getId())
+            new DocumentWasCreated($this->getId(), $this->dueDate, $this->barCode)
         );
-
-        return $this;
 
     }
 
@@ -74,25 +76,24 @@ class Document extends AggregateRoot
         return $this->barCode;
     }
 
-    private function isDueDateLessOrEqualThanNow(): bool
+    private function checkDueDateLessOrEqualThanNow(): void
     {
-        if($this->dueDate <= date('Y-m-d')) {
+        if(strtotime($this->dueDate) <= strtotime(date('Y-m-d'))) {
             $this->errors[] = 'Due Date must be greater than now!';
-            return false;
         }
-
-        return true;
 
     }
 
-    public function hasErrors(): bool
+    public function isValid(): bool
     {
-        return count($this->errors) > 0;
+        $isValid = !$this->scope->anyError() && count($this->errors) === 0;
+
+        return $isValid;
     }
 
     public function fetchErrors(): array
     {
-        return $this->errors;
+        return array_merge($this->errors, $this->scope->fetchErrors());
     }
 
 }

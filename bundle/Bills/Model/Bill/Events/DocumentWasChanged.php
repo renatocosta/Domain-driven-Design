@@ -1,6 +1,6 @@
 <?php
 
-namespace SharedKernel\Sample\Entity;
+namespace Bills\Model\Bills\Entity;
 
 use SharedKernel\Model\Event\AbstractEvent;
 use SharedKernel\Model\ValueObjects\Identity\Identified;
@@ -8,9 +8,21 @@ use SharedKernel\Model\ValueObjects\Identity\Identified;
 class DocumentWasChanged extends AbstractEvent
 {
 
-    public function __construct(Identified $id)
+    /**
+     * @var string
+     */
+    public $dueDate;
+
+    /**
+     * @var string
+     */
+    public $barCode;
+
+    public function __construct(Identified $id, string $dueDate, string $barCode)
     {
         parent::__construct($id);
+        $this->dueDate = $dueDate;
+        $this->barCode = $barCode;
     }
 
 }

@@ -2,6 +2,9 @@
 
 namespace SharedKernel\Infrastructure;
 
+/**
+ * The unit of work implementation manages in-memory database CRUD operations on entities as one transaction
+ */
 interface IUnitOfWorkContext
 {
 
