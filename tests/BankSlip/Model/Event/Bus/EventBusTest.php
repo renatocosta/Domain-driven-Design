@@ -1,12 +1,12 @@
 <?php
 
-namespace Tests\BankSlip\Model\Event\Bus;
+namespace Tests\BankSlipCoreDomain\Model\Event\Bus;
 
-use BankSlip\Model\Document\Factories\DocumentFactory;
-use BankSlip\Model\Document\Factories\StatusIdFactory;
-use BankSlip\Model\Document\Entity\DocumentWasChanged;
-use BankSlip\Model\Document\Entity\DocumentWasCreated;
-use BankSlip\Model\Document\Entity\DocumentWasCreatedEventHandler;
+use BankSlipCoreDomain\Model\Document\Factories\DocumentFactory;
+use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
+use BankSlipCoreDomain\Model\Document\Entity\DocumentWasChanged;
+use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
+use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreatedEventHandler;
 use PHPUnit\Framework\TestCase;
 use SharedKernel\Model\Event\Bus\DomainEventBus;
 
@@ -19,12 +19,12 @@ class EventBusTest extends TestCase
 
     public function setUp()
     {
-        $this->mockDocumentRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
+        $this->mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
         $this->mockDocumentRepository->shouldReceive('countFor')
             ->once()
             ->andReturn(0);
 
-        $this->mockRegistryRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\RegistryRepository')->makePartial();
+        $this->mockRegistryRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\RegistryRepository')->makePartial();
         $this->mockRegistryRepository->shouldReceive('countFor')
             ->once()
             ->andReturn(0);

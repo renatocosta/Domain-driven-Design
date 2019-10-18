@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\BankSlip\Model\Specification;
+namespace Tests\BankSlipCoreDomain\Model\Specification;
 
-use BankSlip\Model\Document\Factories\DocumentFactory;
-use BankSlip\Model\Document\Factories\StatusIdFactory;
-use BankSlip\Model\Document\Specification\BarCodeUnique;
+use BankSlipCoreDomain\Model\Document\Factories\DocumentFactory;
+use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
+use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
 use SharedKernel\Model\Specification\AndSpecification;
 use SharedKernel\Model\Specification\NotSpecification;
 use SharedKernel\Model\Specification\OrSpecification;
@@ -18,7 +18,7 @@ class SpecificationTest extends BaseUnitTestCase
         $status = StatusIdFactory::create();
         $document = DocumentFactory::create($status, '2022-10-10', $this->faker()->buildingNumber);
 
-        $mockDocumentRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\DocumentRepositoryInMemory');
+        $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepositoryInMemory');
         $mockDocumentRepository->shouldReceive('countFor')
         ->once()
         ->andReturn(0);

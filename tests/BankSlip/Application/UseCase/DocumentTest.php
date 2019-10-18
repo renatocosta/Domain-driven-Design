@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests\BankSlip\Infrastructure\UseCase;
+namespace Tests\BankSlipCoreDomain\Infrastructure\UseCase;
 
-use BankSlip\Infrastructure\Services\EmailService;
-use BankSlip\Model\Document\Commands\Inputs\NewDocumentCommand;
-use BankSlip\Model\Document\Handlers\DocumentHandler;
-use BankSlip\Model\Document\Specification\BarCodeUnique;
+use BankSlipCoreDomain\Infrastructure\Services\EmailService;
+use BankSlipCoreDomain\Model\Document\Commands\Inputs\NewDocumentCommand;
+use BankSlipCoreDomain\Model\Document\Handlers\DocumentHandler;
+use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
 use Product\Infrastructure\Transaction\UnitOfWorkContext;
 use Tests\BaseUnitTestCase;
 
@@ -19,7 +19,7 @@ class DocumentTest extends BaseUnitTestCase
         $dueDate = date('Y-m-d', strtotime($dtActual. ' + 1 month'));
 
         $command = new NewDocumentCommand('0987987289789278972', $dueDate);
-        $mockDocumentRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
+        $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
         $mockDocumentRepository->shouldReceive('countFor')
             ->once()
             ->andReturn(0);
@@ -41,7 +41,7 @@ class DocumentTest extends BaseUnitTestCase
         $dueDate = date('Y-m-d', strtotime($dtActual. ' - 2 month'));
 
         $command = new NewDocumentCommand('0987987289789278972', $dueDate);
-        $mockDocumentRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
+        $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
         $mockDocumentRepository->shouldReceive('countFor')
             ->once()
             ->andReturn($totalBarcodeInDb);
@@ -63,7 +63,7 @@ class DocumentTest extends BaseUnitTestCase
         $dueDate = date('Y-m-d', strtotime($dtActual. ' - 8 month'));
 
         $command = new NewDocumentCommand('', $dueDate);
-        $mockDocumentRepository = \Mockery::mock('BankSlip\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
+        $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
         $mockDocumentRepository->shouldReceive('countFor')
             ->once()
             ->andReturn($totalBarcodeInDb);
