@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/Application/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/Application/Console/Job/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/Application/Web/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/Infrastructure/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundle/RefundSlipSupportingDomain/Model/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Refund/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/Application/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/Console/Job/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/Application/Console/Job/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/Web/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/Application/Web/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/Infrastructure/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Model/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/AcquirerGenericDomain/Model/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/Application/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/Console/Job/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/Application/Console/Job/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/Web/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/Application/Web/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/Infrastructure/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Model/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/OpenBanking/Model/.gitkeep" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +125,7 @@
       <workItem from="1571014440209" duration="121000" />
       <workItem from="1571100890459" duration="32000" />
       <workItem from="1571152813766" duration="14665000" />
-      <workItem from="1571326348698" duration="26930000" />
+      <workItem from="1571326348698" duration="27396000" />
     </task>
     <servers />
   </component>
