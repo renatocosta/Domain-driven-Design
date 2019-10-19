@@ -3,7 +3,7 @@
 namespace BankSlipCoreDomain\Model\Document\Repositories;
 
 use BankSlipCoreDomain\Model\Document\Entities\Document;
-use BankSlipCoreDomain\Model\Document\Entities\Registry;
+use BankSlipCoreDomain\Model\Document\Entities\Enroll;
 
 interface IDocumentRepository
 {

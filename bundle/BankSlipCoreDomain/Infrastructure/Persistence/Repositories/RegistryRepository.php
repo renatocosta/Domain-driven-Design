@@ -2,17 +2,17 @@
 
 namespace BankSlipCoreDomain\Infrastructure\Persistence\Repositories;
 
-use BankSlipCoreDomain\Model\Registry\Entities\Registry;
-use BankSlipCoreDomain\Model\Registry\Repositories\IRegistryRepository;
+use BankSlipCoreDomain\Model\Enroll\Entities\Enroll;
+use BankSlipCoreDomain\Model\Enroll\Repositories\IEnrollRepository;
 
-class RegistryRepository implements IRegistryRepository
+class EnrollRepository implements IEnrollRepository
 {
 
     private $model;
 
-    public function countFor($registry): int
+    public function countFor($enroll): int
     {
-        return count($registry);
+        return count($enroll);
     }
 
     public function getAll(): array
@@ -20,7 +20,7 @@ class RegistryRepository implements IRegistryRepository
         // TODO: Implement getAll() method.
     }
 
-    public function create(Registry $input): void
+    public function create(Enroll $input): void
     {
         //$this->model->create($input);
     }

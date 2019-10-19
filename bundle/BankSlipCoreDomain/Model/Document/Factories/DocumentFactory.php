@@ -19,9 +19,9 @@ class DocumentFactory
         return $document;
     }
 
-    public static function createFromWithRegister(Identified $identified): Registry
+    public static function createFromWithRegister(Identified $identified): Enroll
     {
-       // return Registry::creta($identified->getId());
+       // return Enroll::creta($identified->getId());
     }
 
 }

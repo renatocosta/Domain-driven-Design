@@ -3,9 +3,9 @@
 namespace BankSlipCoreDomain\Model\Document\Entity;
 
 use BankSlipCoreDomain\Model\Document\Repositories\IDocumentRepository;
-use BankSlipCoreDomain\Model\Registry\Factories\RegistryFactory;
-use BankSlipCoreDomain\Model\Registry\Factories\StatusIdFactory;
-use BankSlipCoreDomain\Model\Registry\Repositories\IRegistryRepository;
+use BankSlipCoreDomain\Model\Enroll\Factories\EnrollFactory;
+use BankSlipCoreDomain\Model\Enroll\Factories\StatusIdFactory;
+use BankSlipCoreDomain\Model\Enroll\Repositories\IEnrollRepository;
 use SharedKernel\Model\Event\AbstractEvent;
 use SharedKernel\Model\Event\DomainEventHandler;
 
@@ -18,22 +18,22 @@ class DocumentWasCreatedEventHandler implements DomainEventHandler
     private $billsRepository;
 
     /**
-     * @var IRegistryRepository
+     * @var IEnrollRepository
      */
-    private $registryRepository;
+    private $enrollRepository;
 
-    public function __construct(IDocumentRepository $billsRepository, IRegistryRepository $registryRepository)
+    public function __construct(IDocumentRepository $billsRepository, IEnrollRepository $enrollRepository)
     {
         $this->billsRepository = $billsRepository;
-        $this->registryRepository = $registryRepository;
+        $this->enrollRepository = $enrollRepository;
     }
 
     public function handle(AbstractEvent $aDomainEvent): void
     {
         $this->billsRepository->create($aDomainEvent->document);
         $status = StatusIdFactory::create();
-        $registry = RegistryFactory::create($status, $aDomainEvent->document);
-        $this->registryRepository->create($registry);
+        $enroll = EnrollFactory::create($status, $aDomainEvent->document);
+        $this->enrollRepository->create($enroll);
         //May place here any calling to some e.g message queue or kafka or something for
     }
 

@@ -2,64 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
+      <change afterPath="$PROJECT_DIR$/bundle/Deposit/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/DigitalGoods/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ProductBoundedContext/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ProductBoundedContext/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/RefundSupportingDomain/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/ICommandHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands/TransactionalHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bundle/Withdrawal/Application/Web/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Application/Controllers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Application/Controllers/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/MessageBroker/Kafka/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/MessageBroker/Kafka/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Orm/Doctrine/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Orm/Eloquent/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Repositories/DocumentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Repositories/DocumentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Repositories/DocumentRepositoryInMemory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Repositories/DocumentRepositoryInMemory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Repositories/RegistryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Repositories/RegistryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Services/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Services/EmailService.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Services/EmailService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Commands/Inputs/NewDocumentCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Commands/Inputs/NewDocumentCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Entities/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Entities/Document.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Entities/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Entities/ValueObjects/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Entities/ValueObjects/StatusId.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Entities/ValueObjects/StatusId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Enums/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Enums/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Enums/StatusIdEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Enums/StatusIdEnum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Events/DocumentWasChanged.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Events/DocumentWasChanged.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Events/DocumentWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Events/DocumentWasCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Events/Handlers/DocumentWasCreatedEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Events/Handlers/DocumentWasCreatedEventHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Factories/DocumentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Factories/DocumentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Factories/StatusIdFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Factories/StatusIdFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Handlers/DocumentHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Handlers/DocumentHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Repositories/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Repositories/IDocumentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Repositories/IDocumentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Scopes/DocumentScopes.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Scopes/DocumentScopes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Services/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Specification/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Specification/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Document/Specification/BarCodeUnique.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Specification/BarCodeUnique.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Refund/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Refund/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Commands/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Commands/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Entities/Registry.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/Registry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Entities/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/ValueObjects/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Entities/ValueObjects/StatusId.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/ValueObjects/StatusId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Enums/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Enums/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Enums/StatusIdEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Enums/StatusIdEnum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Events/RegistryWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Events/RegistryWasCreated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Factories/RegistryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Factories/RegistryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Factories/StatusIdFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Factories/StatusIdFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Repositories/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Repositories/IRegistryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Repositories/IRegistryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Services/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Specification/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Specification/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/CoreDomain/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/CoreDomain/Application/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/CoreDomain/Infrastructure/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/CoreDomain/Model/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/GenericDomain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/RefundSupportDomain/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/GenericDomain/Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/RefundSupportDomain/Application/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/GenericDomain/Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/RefundSupportDomain/Infrastructure/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/GenericDomain/Model/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/RefundSupportDomain/Model/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SupportDomain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SupportDomain/Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SupportDomain/Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Infrastructure/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/SupportDomain/Model/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Model/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Application/UseCase/DocumentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlip/Application/UseCase/DocumentTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Model/Event/Bus/EventBusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlip/Model/Event/Bus/EventBusTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Model/Specification/SpecificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlip/Model/Specification/SpecificationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Application/Controllers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Repositories/RegistryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Repositories/RegistryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Infrastructure/Persistence/Transaction/UnitOfWorkContext.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Commands/Inputs/NewDocumentCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Commands/Inputs/NewDocumentCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Events/Handlers/DocumentWasCreatedEventHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Events/Handlers/DocumentWasCreatedEventHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Factories/DocumentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Factories/DocumentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Handlers/DocumentHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Handlers/DocumentHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Repositories/IDocumentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Document/Repositories/IDocumentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Commands/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Application/Web/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/Registry.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Entities/Registry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Commands/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Entities/ValueObjects/StatusId.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Entities/ValueObjects/StatusId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Enums/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Entities/ValueObjects/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Enums/StatusIdEnum.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Enums/StatusIdEnum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Events/RegistryWasCreated.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Events/RegistryWasCreated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Factories/RegistryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Factories/RegistryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Factories/StatusIdFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Factories/StatusIdFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Enums/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Repositories/IRegistryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Repositories/IRegistryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Repositories/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Registry/Specification/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Services/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportDomain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/BankSlipCoreDomain/Model/Enroll/Specification/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportDomain/Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/CNABManager/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportDomain/Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/CNABManager/Application/Web/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/RefundSupportDomain/Model/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/Deposit/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Application/UseCase/DocumentTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlipCoreDomain/Application/UseCase/DocumentTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Model/Event/Bus/EventBusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlipCoreDomain/Model/Event/Bus/EventBusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BankSlip/Model/Specification/SpecificationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BankSlipCoreDomain/Model/Specification/SpecificationTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -129,7 +117,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Events" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -144,11 +132,11 @@
       <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Events" />
-      <recent name="$PROJECT_DIR$/bundle/BankSlip/Infrastructure/Persistence/Repositories" />
-      <recent name="$PROJECT_DIR$/bundle/BankSlip/Model/Registry/Commands" />
-      <recent name="$PROJECT_DIR$/bundle/BankSlip/Model" />
-      <recent name="$PROJECT_DIR$/tests/Bills/Model/Event/Bus" />
+      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands" />
+      <recent name="$PROJECT_DIR$/bundle/Withdrawal/Application" />
+      <recent name="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application" />
+      <recent name="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application" />
+      <recent name="$PROJECT_DIR$/bundle/ProductBoundedContext/Application" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -184,7 +172,7 @@
       <workItem from="1571014440209" duration="121000" />
       <workItem from="1571100890459" duration="32000" />
       <workItem from="1571152813766" duration="14665000" />
-      <workItem from="1571326348698" duration="11356000" />
+      <workItem from="1571326348698" duration="24048000" />
     </task>
     <servers />
   </component>

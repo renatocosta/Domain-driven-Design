@@ -1,6 +1,6 @@
 <?php
 
-namespace Product\Infrastructure\Transaction;
+namespace BankSlipCoreDomain\Infrastructure\Transaction;
 
 use SharedKernel\Infrastructure\IUnitOfWorkContext;
 

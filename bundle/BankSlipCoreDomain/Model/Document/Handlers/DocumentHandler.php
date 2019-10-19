@@ -5,57 +5,49 @@ namespace BankSlipCoreDomain\Model\Document\Handlers;
 use BankSlipCoreDomain\Model\Document\Commands\Inputs\NewDocumentCommand;
 use BankSlipCoreDomain\Model\Document\Factories\DocumentFactory;
 use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
-use BankSlipCoreDomain\Model\Document\Repositories\IDocumentRepository;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
 use BankSlipCoreDomain\Model\Document\Specification\DocumentHasOverdueDate;
 use BankSlipCoreDomain\Model\Document\Specification\DocumentIsAbleTo;
-use SharedKernel\Infrastructure\IUnitOfWorkContext;
 use SharedKernel\Infrastructure\Services\IEmailService;
 use SharedKernel\Model\Commands\CommandResult;
+use SharedKernel\Model\Commands\ICommand;
+use SharedKernel\Model\Commands\ICommandHandler;
 use SharedKernel\Model\Commands\ICommandResult;
 
-class DocumentHandler
+class DocumentHandler implements ICommandHandler
 {
-
-    private $billsRepository;
 
     private $emailService;
 
-    private $iUnitOfWorkContext;
-
-    private $barCodeUnique;
+    private $barCodeUniqueSpec;
 
     public function __construct(
-                                IDocumentRepository $billsRepository,
                                 IEmailService $emailService,
-                                IUnitOfWorkContext $iUnitOfWorkContext,
-                                BarCodeUnique $barCodeUnique)
+                                BarCodeUnique $barCodeUniqueSpec)
     {
-        $this->billsRepository = $billsRepository;
         $this->emailService = $emailService;
-        $this->iUnitOfWorkContext = $iUnitOfWorkContext;
-        $this->barCodeUnique = $barCodeUnique;
+        $this->barCodeUniqueSpec = $barCodeUniqueSpec;
     }
 
-    public function handle(NewDocumentCommand $command): ICommandResult
+    /**
+     * @param NewDocumentCommand $command
+     * @return ICommandResult
+     */
+    public function handle(ICommand $command): ICommandResult
     {
 
-        $this->iUnitOfWorkContext->beginTransaction();
-
         $status = StatusIdFactory::create();
-        $document = DocumentFactory::create($status, $command->getDueDate(), $command->getBarCode());
+        $document = DocumentFactory::create($status, $command->dueDate, $command->barCode);
 
         if (!$document->isValid()) {
             return new CommandResult(false, 'Algumas incosistências foram identificadas', $document->fetchErrors());
         }
 
-        if (!$this->barCodeUnique->isSatisfiedBy($document->getBarCode())) {
+        if (!$this->barCodeUniqueSpec->isSatisfiedBy($document->getBarCode())) {
             return new CommandResult(false, 'O código de barras informado já existe', $command->asArray());
         }
 
         $this->emailService->send('emailto@picpay.com', "bills@picpay.com", "Bem vindo", "Boleto registrado com sucesso!!");
-
-        $this->iUnitOfWorkContext->commit();
 
         return new CommandResult(true, 'Boleto registrado com sucesso!!', [
             'status' => $document->getStatusId()
