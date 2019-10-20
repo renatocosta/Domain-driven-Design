@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/Console/Job/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/Web/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Infrastructure/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Model/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/Console/Job/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/Web/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Infrastructure/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Model/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/domains/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picpay-contextmapper-finance_ContextMap.puml.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/picpay-contextmapper-finance_ContextMap.puml.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +126,7 @@
       <workItem from="1571014440209" duration="121000" />
       <workItem from="1571100890459" duration="32000" />
       <workItem from="1571152813766" duration="14665000" />
-      <workItem from="1571326348698" duration="30188000" />
+      <workItem from="1571326348698" duration="30380000" />
     </task>
     <servers />
   </component>
