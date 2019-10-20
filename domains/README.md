@@ -18,3 +18,6 @@
 
 # Ponto de vista<br>
 ![Image](../assets/point_of_view_among_placeholders.png?raw=true)<br><br>
+
+# Exemplo real baseado no Bills decomposto<br>
+[domains](domains)

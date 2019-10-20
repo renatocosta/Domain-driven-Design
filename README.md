@@ -24,7 +24,7 @@ Tipos:<br>
 # Design estratégico
 <ul>
 <li>É a parte mais importante do DDD</li>
-<li>Extrair conhecimento</li>
+<li>Extrair conhecimentos</li>
 </ul>
 
 # Design tático
