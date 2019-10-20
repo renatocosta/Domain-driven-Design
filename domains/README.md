@@ -1,10 +1,7 @@
 # Context Mapping baseado nos fontes desse repositório<br>
 ![Image](../assets/picpay-contextmapper-finance_ContextMap.puml.png?raw=true)<br><br>
 
-# Design estratégico
-
-## Event Storming
-![Image](../assets/event-storming.jpg?raw=true)<br><br>
+# DDD estratégico
 
 ## Event Storming
 ![Image](../assets/event-storming.jpg?raw=true)<br><br>
@@ -18,7 +15,7 @@
 ## Linguagem onipresente<br>
 ![Image](../assets/ubiquitous_language.gif?raw=true)<br><br>
 
-# Design tático
+# DDD tático
 
 ## Building Blocks<br>
 ![Image](../assets/building-blocks.png?raw=true)<br><br>
@@ -33,4 +30,4 @@
 ![Image](../assets/acl.jpg?raw=true)<br><br>
 
 ## Ponto de vista<br>
-![Image](../assets/point_of_view_among_placeholders.png?raw=true)<br><br>s
+![Image](../assets/point_of_view_among_placeholders.png?raw=true)<br><br>
