@@ -1,1 +1,0 @@
-![Image](../picpay-contextmapper-finance_ContextMap.puml.png?raw=true)

@@ -38,7 +38,6 @@ Tipos:<br>
 </ul>
 
 # Modelos
-
 <ul>
 <li>São conjunto de itens que descrevem a funcionalidade do sistema</li>
 <li>Descrevem aspectos do domínio assim como é utilizado para resolver um determinado problema</li>
@@ -52,4 +51,13 @@ Modelagem, classificação e diagramas inter relacionados.
 <li>Desbravando as fronteiras do seu negócio</li>
 <li>Delimita o seu domínio complexo em contextos baseados nas intenções do negócio</li>
 <li>Estimula a criação de squads por contexto</li>
+</ul>
+
+# Building Blocks
+A ligação entre o modelo e a implementação deve ser feita detalhadamente aqui<br>
+Expressa o modelo do ponto de vista do software
+<ul>
+<li>Entity - Um objeto definido por sua identidade</li>
+<li>Aggregate/Aggregate Root</li>
+<li>Domain Events</li>
 </ul>

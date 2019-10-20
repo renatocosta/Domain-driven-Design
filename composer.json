@@ -16,7 +16,7 @@
   },
   "autoload": {
     "classmap": [
-      "bundle"
+      "domains"
     ],
     "psr-4": {
       "Core\\": "Core",
