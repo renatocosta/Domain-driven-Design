@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEDPaymentContext/Model/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/Console/Job/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Application/Web/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Infrastructure/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/TEFPaymentContext/Model/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/domains/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picpay-contextmapper-finance_ContextMap.puml.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/picpay-contextmapper-finance_ContextMap.puml.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +84,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bundle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/domains" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -79,18 +92,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services" />
       <recent name="$PROJECT_DIR$/bundle/Customer/Infrastructure/Persistence/Repositories" />
       <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Repositories" />
       <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Specification" />
-      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Services" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/domains" />
       <recent name="$PROJECT_DIR$/bundle" />
       <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands" />
       <recent name="$PROJECT_DIR$/bundle/Withdrawal/Application" />
       <recent name="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application" />
-      <recent name="$PROJECT_DIR$/bundle/RefundSupportingDomain/Application" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +139,7 @@
       <workItem from="1571014440209" duration="121000" />
       <workItem from="1571100890459" duration="32000" />
       <workItem from="1571152813766" duration="14665000" />
-      <workItem from="1571326348698" duration="29007000" />
+      <workItem from="1571326348698" duration="30188000" />
     </task>
     <servers />
   </component>
