@@ -1,7 +1,7 @@
 # O que é Domain-Driven Design 
 Uma abordagem para modelagem de software que reúne conceitos, princípios e técnicas para resolver problemas de negócio.
 
-# Os pilares do DDD são
+# Pilares do DDD
 
 <ul>
 <li>Domínio</li>
@@ -34,7 +34,7 @@ Tipos:<br>
 <ul>
 <li>Linguagem versátil compartilhada pela equipe</li>
 <li>Unifica a divisão linguística entre os envolvidos tornando-a em uma linguagem comum</li>
-<li>No cenário agtual time de negócio tem um conhecimento limitado do jargão técnico</li>
+<li>No cenário atual time de negócio tem um conhecimento limitado do jargão técnico</li>
 </ul>
 
 # Modelos
