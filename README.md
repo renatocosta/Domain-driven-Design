@@ -1,6 +1,3 @@
-# Exemplo real baseado no Bills decomposto<br>
-[domains](domains)
-
 # O que é Domain-Driven Design 
 Uma nova abordagem para modelagem de software que reúne conceitos, princípios e técnicas para resolver problemas de negócio.
 
@@ -56,3 +53,6 @@ Modelagem, classificação e diagramas inter relacionados.
 <li>Delimita o seu domínio complexo em contextos baseados nas intenções do negócio</li>
 <li>Estimula a criação de squads por contexto</li>
 </ul>
+
+# Exemplo real baseado no Bills decomposto<br>
+[domains](domains)
