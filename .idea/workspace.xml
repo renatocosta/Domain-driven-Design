@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
+      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Contracts/ICoordinator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,32 +76,33 @@
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RpxWmrUVdc113n08VPBAMbjn1v" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/domains" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Infrastructure/Services" />
-      <recent name="$PROJECT_DIR$/bundle/Customer/Infrastructure/Persistence/Repositories" />
-      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Repositories" />
-      <recent name="$PROJECT_DIR$/bundle/Customer/Model/Model1/Specification" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/domains" />
-      <recent name="$PROJECT_DIR$/bundle" />
-      <recent name="$PROJECT_DIR$/bundle/SharedKernel/Model/Commands" />
-      <recent name="$PROJECT_DIR$/bundle/Withdrawal/Application" />
-      <recent name="$PROJECT_DIR$/bundle/ThirdPartyGenericDomain/Application" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler" />
+      <recent name="$PROJECT_DIR$/tests/AntiCorruptionLayer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Handler" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Providers/CNABManager/Translator" />
+      <recent name="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -127,7 +139,9 @@
       <workItem from="1571100890459" duration="32000" />
       <workItem from="1571152813766" duration="14665000" />
       <workItem from="1571326348698" duration="31812000" />
-      <workItem from="1571585330230" duration="1144000" />
+      <workItem from="1571585330230" duration="1357000" />
+      <workItem from="1571663788278" duration="266000" />
+      <workItem from="1571962480986" duration="30215000" />
     </task>
     <servers />
   </component>

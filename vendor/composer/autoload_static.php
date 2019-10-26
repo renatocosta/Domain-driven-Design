@@ -36,6 +36,7 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
         ),
         'P' => 
         array (
+            'Psr\\Http\\Message\\' => 17,
             'Prophecy\\' => 9,
             'Product\\' => 8,
             'ProductBoundedContext\\' => 22,
@@ -86,6 +87,10 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -131,6 +136,18 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
     );
 
     public static $classMap = array (
+        'AntiCorruptionLayer\\Contracts\\ICoordinator' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Contracts/ICoordinator.php',
+        'AntiCorruptionLayer\\Dependencies\\Modern\\IModernRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php',
+        'AntiCorruptionLayer\\Dependencies\\Modern\\ModernCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php',
+        'AntiCorruptionLayer\\Dependencies\\Modern\\ModernMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php',
+        'AntiCorruptionLayer\\Upstream\\Factories\\ChainHandlerFactory' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEDHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEDHandler.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEFHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEFHandler.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Translator\\TranslatorCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Translator/TranslatorCoreLegacyRepository.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\DischargeHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/DischargeHandler.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\RemittanceHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/RemittanceHandler.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Translator\\TranslatorMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php',
+        'AntiCorruptionLayer\\Upstream\\UpstreamHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/UpstreamHandler.php',
         'Assert\\Assert' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assert.php',
         'Assert\\Assertion' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assertion.php',
         'Assert\\AssertionChain' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/AssertionChain.php',
@@ -1315,6 +1332,13 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
         'Prophecy\\Prophet' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Prophet.php',
         'Prophecy\\Util\\ExportUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php',
         'Prophecy\\Util\\StringUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/StringUtil.php',
+        'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
+        'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
+        'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
+        'Psr\\Http\\Message\\ServerRequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/ServerRequestInterface.php',
+        'Psr\\Http\\Message\\StreamInterface' => __DIR__ . '/..' . '/psr/http-message/src/StreamInterface.php',
+        'Psr\\Http\\Message\\UploadedFileInterface' => __DIR__ . '/..' . '/psr/http-message/src/UploadedFileInterface.php',
+        'Psr\\Http\\Message\\UriInterface' => __DIR__ . '/..' . '/psr/http-message/src/UriInterface.php',
         'Ramsey\\Uuid\\BinaryUtils' => __DIR__ . '/..' . '/ramsey/uuid/src/BinaryUtils.php',
         'Ramsey\\Uuid\\Builder\\DefaultUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DefaultUuidBuilder.php',
         'Ramsey\\Uuid\\Builder\\DegradedUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DegradedUuidBuilder.php',
@@ -1484,6 +1508,7 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
         'SharedKernel\\Model\\ValueObjects\\Identity\\Identified' => __DIR__ . '/../..' . '/domains/SharedKernel/Model/ValueObjects/Identity/Identified.php',
         'SharedKernel\\Model\\ValueObjects\\Network\\Url' => __DIR__ . '/../..' . '/domains/SharedKernel/Model/ValueObjects/Network/Url.php',
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
+        'Tests\\AntiCorruptionLayer\\HandlerTest' => __DIR__ . '/../..' . '/tests/AntiCorruptionLayer/HandlerTest.php',
         'Tests\\BankSlipCoreDomain\\Infrastructure\\UseCase\\DocumentTest' => __DIR__ . '/../..' . '/tests/BankSlipCoreDomain/Application/UseCase/DocumentTest.php',
         'Tests\\BankSlipCoreDomain\\Model\\Event\\Bus\\EventBusTest' => __DIR__ . '/../..' . '/tests/BankSlipCoreDomain/Model/Event/Bus/EventBusTest.php',
         'Tests\\BankSlipCoreDomain\\Model\\Specification\\SpecificationTest' => __DIR__ . '/../..' . '/tests/BankSlipCoreDomain/Model/Specification/SpecificationTest.php',
