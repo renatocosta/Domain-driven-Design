@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AntiCorruptionLayer\\Contracts\\ICoordinator' => $baseDir . '/domains/AntiCorruptionLayer/Contracts/ICoordinator.php',
     'AntiCorruptionLayer\\Dependencies\\Modern\\IModernRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php',
     'AntiCorruptionLayer\\Dependencies\\Modern\\ModernCoreLegacyRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php',
     'AntiCorruptionLayer\\Dependencies\\Modern\\ModernMMLRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php',

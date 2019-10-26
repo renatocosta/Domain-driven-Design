@@ -18,13 +18,15 @@ class ChainHandlerFactory
     public static function create(array $incomeData): UpstreamHandler
     {
 
-        //
+        //Dependencies
         $modernMMLRepository = new ModernMMLRepository();
         $translatorMMLRepository = new TranslatorMMLRepository($incomeData, $modernMMLRepository);
 
         $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
         $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository($incomeData, $modernCoreLegacyRepository);
 
+
+        //Handlers
 
         //MML
         $discharge = new DischargeHandler();

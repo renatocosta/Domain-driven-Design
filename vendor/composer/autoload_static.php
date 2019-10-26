@@ -136,7 +136,6 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
     );
 
     public static $classMap = array (
-        'AntiCorruptionLayer\\Contracts\\ICoordinator' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Contracts/ICoordinator.php',
         'AntiCorruptionLayer\\Dependencies\\Modern\\IModernRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php',
         'AntiCorruptionLayer\\Dependencies\\Modern\\ModernCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php',
         'AntiCorruptionLayer\\Dependencies\\Modern\\ModernMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php',

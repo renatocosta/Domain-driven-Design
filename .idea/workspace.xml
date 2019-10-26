@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Contracts/ICoordinator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/picpay-domain-driven-design-sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Contracts/ICoordinator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +133,7 @@
       <workItem from="1571326348698" duration="31812000" />
       <workItem from="1571585330230" duration="1357000" />
       <workItem from="1571663788278" duration="266000" />
-      <workItem from="1571962480986" duration="30215000" />
+      <workItem from="1571962480986" duration="30420000" />
     </task>
     <servers />
   </component>
