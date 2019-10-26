@@ -66,7 +66,7 @@ A equipe downstream atua como cliente (customer) da equipe upstream (supplier). 
 Neste cenário duas equipes possuem dependências mútuas em seus contextos e precisam somar esforços de modelagem para se atenderem mutuamente.<br>
 ### Anti Corruption Layer<br>
 Neste cenário a equipe downstream desenvolve uma camada adicional anti-corrupção para se comunicar com o contexto upstream, é o cenário típico onde o supplier é um sistema legado ou uma API mal desenvolvida.<br>
-[domains/AntiCorruptionLayer](Exemplo)
+[https://github.com/PicPay/picpay-domain-driven-design-sample/tree/master/domains/AntiCorruptionLayer](Exemplo)
 
 # Exemplo real baseado no Bills decomposto<br>
 [domains](domains)

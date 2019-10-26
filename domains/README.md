@@ -28,7 +28,7 @@
 
 ## Anti-Corruption Layer<br>
 ![Image](../assets/acl.jpg?raw=true)<br><br>
-[AntiCorruptionLayer](Exemplo)
+[https://github.com/PicPay/picpay-domain-driven-design-sample/tree/master/domains/AntiCorruptionLayer](Exemplo)
 
 ## Ponto de vista<br>
 ![Image](../assets/point_of_view_among_placeholders.png?raw=true)<br><br>
