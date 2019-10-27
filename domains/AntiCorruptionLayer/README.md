@@ -9,7 +9,8 @@ Para resolver esse problema é implementado o design pattern Chain of Responsibi
 
 Esse padrão é composto por uma pipeline, handlers e por fim o seu destino.  
 
-Cada handler serve para manipular uma mensagem e identificar se ela corresponde as suas expectativas. Se isso ocorrer a mesma tomará uma ação e então invocará um tradutor que delegará para um repository, service ou algum ponto de entrada da camada de aplicação.  
+Cada handler serve para manipular uma mensagem e identificar se ela corresponde as suas expectativas. Se isso ocorrer a mesma tomará uma ação e então invocará um tradutor que delegará para um repository, service ou algum ponto de entrada da camada de aplicação. 
+Se não dar match e então delega para o sucessor handler e assim sucessivamente.  
 
 Pipeline é por onde a mensagem transita.  
 
