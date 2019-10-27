@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8523383-1d5f-4c47-9337-03e3fe69cc14" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/assets/chain_of_responsability.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/chain_responsabilities.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Enum/EndpointsEnum.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/IModernRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/ModernCoreLegacyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Dependencies/ModernMMLRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEDHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEDHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Translator/TranslatorCoreLegacyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Downstream/Translator/TranslatorCoreLegacyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/RemittanceHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/RemittanceHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/Upstream/Providers/MML/Downstream/Translator/TranslatorMMLRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AntiCorruptionLayer/HandlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AntiCorruptionLayer/HandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/chain_of_responsability.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/chain_responsabilities.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/AntiCorruptionLayer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/domains/AntiCorruptionLayer/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +132,7 @@
       <workItem from="1571326348698" duration="31812000" />
       <workItem from="1571585330230" duration="1357000" />
       <workItem from="1571663788278" duration="266000" />
-      <workItem from="1571962480986" duration="33725000" />
+      <workItem from="1571962480986" duration="34317000" />
     </task>
     <servers />
   </component>
