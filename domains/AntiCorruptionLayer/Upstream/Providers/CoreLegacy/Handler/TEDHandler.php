@@ -2,7 +2,7 @@
 
 namespace AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Handler;
 
-use AntiCorruptionLayer\Dependencies\Modern\IModernRepository;
+use AntiCorruptionLayer\Dependencies\IModernRepository;
 use AntiCorruptionLayer\Upstream\UpstreamHandler;
 use Psr\Http\Message\RequestInterface;
 

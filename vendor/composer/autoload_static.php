@@ -136,16 +136,17 @@ class ComposerStaticInit27fc903941250aa6c1eb931bce2d9051
     );
 
     public static $classMap = array (
-        'AntiCorruptionLayer\\Dependencies\\Modern\\IModernRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php',
-        'AntiCorruptionLayer\\Dependencies\\Modern\\ModernCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php',
-        'AntiCorruptionLayer\\Dependencies\\Modern\\ModernMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php',
+        'AntiCorruptionLayer\\Dependencies\\IModernRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/IModernRepository.php',
+        'AntiCorruptionLayer\\Dependencies\\ModernCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/ModernCoreLegacyRepository.php',
+        'AntiCorruptionLayer\\Dependencies\\ModernMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Dependencies/ModernMMLRepository.php',
+        'AntiCorruptionLayer\\Upstream\\Enum\\EndpointsEnum' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Enum/EndpointsEnum.php',
         'AntiCorruptionLayer\\Upstream\\Factories\\ChainHandlerFactory' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Downstream\\Translator\\TranslatorCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Downstream/Translator/TranslatorCoreLegacyRepository.php',
         'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEDHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEDHandler.php',
         'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEFHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEFHandler.php',
-        'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Translator\\TranslatorCoreLegacyRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Translator/TranslatorCoreLegacyRepository.php',
+        'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Downstream\\Translator\\TranslatorMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Downstream/Translator/TranslatorMMLRepository.php',
         'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\DischargeHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/DischargeHandler.php',
         'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\RemittanceHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/RemittanceHandler.php',
-        'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Translator\\TranslatorMMLRepository' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php',
         'AntiCorruptionLayer\\Upstream\\UpstreamHandler' => __DIR__ . '/../..' . '/domains/AntiCorruptionLayer/Upstream/UpstreamHandler.php',
         'Assert\\Assert' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assert.php',
         'Assert\\Assertion' => __DIR__ . '/..' . '/beberlei/assert/lib/Assert/Assertion.php',

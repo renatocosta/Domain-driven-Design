@@ -1,10 +1,10 @@
 <?php
 
-namespace AntiCorruptionLayer\Upstream\Providers\MML\Translator;
+namespace AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Downstream\Translator;
 
-use AntiCorruptionLayer\Dependencies\Modern\IModernRepository;
+use AntiCorruptionLayer\Dependencies\IModernRepository;
 
-class TranslatorMMLRepository implements IModernRepository
+class TranslatorCoreLegacyRepository implements IModernRepository
 {
 
     private $dataLegacy;

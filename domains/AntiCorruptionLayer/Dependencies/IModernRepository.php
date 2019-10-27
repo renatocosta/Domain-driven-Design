@@ -1,6 +1,6 @@
 <?php
 
-namespace AntiCorruptionLayer\Dependencies\Modern;
+namespace AntiCorruptionLayer\Dependencies;
 
 interface IModernRepository
 {

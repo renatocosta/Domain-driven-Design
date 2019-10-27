@@ -2,14 +2,14 @@
 
 namespace AntiCorruptionLayer\Upstream\Factories;
 
-use AntiCorruptionLayer\Dependencies\Modern\ModernCoreLegacyRepository;
-use AntiCorruptionLayer\Dependencies\Modern\ModernMMLRepository;
+use AntiCorruptionLayer\Dependencies\ModernCoreLegacyRepository;
+use AntiCorruptionLayer\Dependencies\ModernMMLRepository;
 use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Handler\TEDHandler;
 use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Handler\TEFHandler;
-use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Translator\TranslatorCoreLegacyRepository;
+use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Downstream\Translator\TranslatorCoreLegacyRepository;
 use AntiCorruptionLayer\Upstream\Providers\MML\Handler\DischargeHandler;
 use AntiCorruptionLayer\Upstream\Providers\MML\Handler\RemittanceHandler;
-use AntiCorruptionLayer\Upstream\Providers\MML\Translator\TranslatorMMLRepository;
+use AntiCorruptionLayer\Upstream\Providers\MML\Downstream\Translator\TranslatorMMLRepository;
 use AntiCorruptionLayer\Upstream\UpstreamHandler;
 
 class ChainHandlerFactory

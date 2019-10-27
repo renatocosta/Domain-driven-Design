@@ -2,6 +2,7 @@
 
 namespace Tests\AntiCorruptionLayer;
 
+use AntiCorruptionLayer\Upstream\Enum\EndpointsEnum;
 use AntiCorruptionLayer\Upstream\Factories\ChainHandlerFactory;
 use AntiCorruptionLayer\Upstream\NothingToDoHandler;
 use Tests\BaseUnitTestCase;
@@ -22,16 +23,11 @@ class HandlerTest extends BaseUnitTestCase
 
     public function endPoints(): array
     {
-        return [
-            ['/cnab-manager/remittance'],
-            ['/cnab-manager/discharge'],
-            ['/core-legacy/tef'],
-            ['/core-legacy/ted']
-        ];
+        return [EndpointsEnum::NAMES];
     }
 
     /**
-     *
+     * @param string $endpoint
      * @dataProvider endPoints
      */
     public function testShouldHandlingProviders(string $endpoint)

@@ -6,16 +6,17 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AntiCorruptionLayer\\Dependencies\\Modern\\IModernRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/IModernRepository.php',
-    'AntiCorruptionLayer\\Dependencies\\Modern\\ModernCoreLegacyRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernCoreLegacyRepository.php',
-    'AntiCorruptionLayer\\Dependencies\\Modern\\ModernMMLRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/Modern/ModernMMLRepository.php',
+    'AntiCorruptionLayer\\Dependencies\\IModernRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/IModernRepository.php',
+    'AntiCorruptionLayer\\Dependencies\\ModernCoreLegacyRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/ModernCoreLegacyRepository.php',
+    'AntiCorruptionLayer\\Dependencies\\ModernMMLRepository' => $baseDir . '/domains/AntiCorruptionLayer/Dependencies/ModernMMLRepository.php',
+    'AntiCorruptionLayer\\Upstream\\Enum\\EndpointsEnum' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Enum/EndpointsEnum.php',
     'AntiCorruptionLayer\\Upstream\\Factories\\ChainHandlerFactory' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Factories/ChainHandlerFactory.php',
+    'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Downstream\\Translator\\TranslatorCoreLegacyRepository' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Downstream/Translator/TranslatorCoreLegacyRepository.php',
     'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEDHandler' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEDHandler.php',
     'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Handler\\TEFHandler' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Handler/TEFHandler.php',
-    'AntiCorruptionLayer\\Upstream\\Providers\\CoreLegacy\\Translator\\TranslatorCoreLegacyRepository' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/CoreLegacy/Translator/TranslatorCoreLegacyRepository.php',
+    'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Downstream\\Translator\\TranslatorMMLRepository' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Downstream/Translator/TranslatorMMLRepository.php',
     'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\DischargeHandler' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/DischargeHandler.php',
     'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Handler\\RemittanceHandler' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Handler/RemittanceHandler.php',
-    'AntiCorruptionLayer\\Upstream\\Providers\\MML\\Translator\\TranslatorMMLRepository' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/Providers/MML/Translator/TranslatorMMLRepository.php',
     'AntiCorruptionLayer\\Upstream\\UpstreamHandler' => $baseDir . '/domains/AntiCorruptionLayer/Upstream/UpstreamHandler.php',
     'Assert\\Assert' => $vendorDir . '/beberlei/assert/lib/Assert/Assert.php',
     'Assert\\Assertion' => $vendorDir . '/beberlei/assert/lib/Assert/Assertion.php',
