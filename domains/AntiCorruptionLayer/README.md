@@ -1,5 +1,5 @@
 
-Anti-corruption layer é a camada responsável por processar dados oriundos de parceiros externos como código legado, micro serviços e entre outros.
+Anti-corruption layer é a camada responsável por lidar com dados oriundos de parceiros externos como código legado, micro serviços e entre outros.
 O principal objetivo é evitar a poluição de códigos legados no codebase.
 Apesar de ter alguma similaridade com o Gateway na verdade o Anti-corruption layer serve somente para lidar com intenções externas na camada de negócio.   
 
