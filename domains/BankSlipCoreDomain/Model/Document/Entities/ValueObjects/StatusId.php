@@ -3,7 +3,7 @@
 namespace BankSlipCoreDomain\Model\Document\Entities\ValueObjects;
 
 use BankSlipCoreDomain\Model\Document\Enums\StatusIdEnum;
-use SharedKernel\Model\ValueObjects\Identity\FindValueIn;
+use CrossCutting\Model\ValueObjects\Identity\FindValueIn;
 
 class StatusId
 {

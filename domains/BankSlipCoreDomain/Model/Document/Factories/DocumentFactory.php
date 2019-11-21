@@ -5,8 +5,8 @@ namespace BankSlipCoreDomain\Model\Document\Factories;
 use BankSlipCoreDomain\Model\Document\Entities\Document;
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
 use Ramsey\Uuid\Uuid;
-use SharedKernel\Model\ValueObjects\Identity\Guid;
-use SharedKernel\Model\ValueObjects\Identity\Identified;
+use CrossCutting\Model\ValueObjects\Identity\Guid;
+use CrossCutting\Model\ValueObjects\Identity\Identified;
 
 class DocumentFactory
 {

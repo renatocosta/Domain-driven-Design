@@ -66,7 +66,9 @@ A equipe downstream atua como cliente (customer) da equipe upstream (supplier). 
 Neste cenário duas equipes possuem dependências mútuas em seus contextos e precisam somar esforços de modelagem para se atenderem mutuamente.<br>
 ### Anti Corruption Layer<br>
 Neste cenário a equipe downstream desenvolve uma camada adicional anti-corrupção para se comunicar com o contexto upstream, é o cenário típico onde o supplier é um sistema legado ou uma API mal desenvolvida.<br>
-[Exemplo](domains/AntiCorruptionLayer)
-
+[Exemplo](AntiCorruptionLayer)
+### Cross-Cutting<br>
+Uma camada a parte que não obedece a hierarquia de camada. Como o próprio nome diz, essa camada cruza toda a hierarquia. Contém as funcionalidades que pode ser utilizada em qualquer parte do código, como, por exemplo, validação de CPF/CNPJ, consumo de API externa e utilização de alguma segurança.
+[Exemplo](CrossCutting)
 # Exemplo real baseado no Bills decomposto<br>
 [domains](domains)

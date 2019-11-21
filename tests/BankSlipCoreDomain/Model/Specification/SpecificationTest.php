@@ -5,9 +5,9 @@ namespace Tests\BankSlipCoreDomain\Model\Specification;
 use BankSlipCoreDomain\Model\Document\Factories\DocumentFactory;
 use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
-use SharedKernel\Model\Specification\AndSpecification;
-use SharedKernel\Model\Specification\NotSpecification;
-use SharedKernel\Model\Specification\OrSpecification;
+use CrossCutting\Model\Specification\AndSpecification;
+use CrossCutting\Model\Specification\NotSpecification;
+use CrossCutting\Model\Specification\OrSpecification;
 use Tests\BaseUnitTestCase;
 
 class SpecificationTest extends BaseUnitTestCase

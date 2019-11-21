@@ -5,8 +5,8 @@ namespace BankSlipCoreDomain\Model\Document\Entities;
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
 use BankSlipCoreDomain\Model\Document\Scopes\DocumentScopes;
 use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
-use SharedKernel\Model\Event\ValueObjects\AggregateRoot;
-use SharedKernel\Model\ValueObjects\Identity\Identified;
+use CrossCutting\Model\Event\ValueObjects\AggregateRoot;
+use CrossCutting\Model\ValueObjects\Identity\Identified;
 
 class Document extends AggregateRoot
 {
@@ -34,7 +34,7 @@ class Document extends AggregateRoot
     /**
      * @var array
      */
-    private $errors;
+    private $errors = [];
 
     public function __construct(Identified $aggregateRootIdentifier)
     {
@@ -78,6 +78,7 @@ class Document extends AggregateRoot
 
     private function checkDueDateLessOrEqualThanNow(): void
     {
+
         if(strtotime($this->dueDate) <= strtotime(date('Y-m-d'))) {
             $this->errors[] = 'Due Date must be greater than now!';
         }

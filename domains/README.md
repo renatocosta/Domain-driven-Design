@@ -28,7 +28,7 @@
 
 ## Anti-Corruption Layer<br>
 ![Image](../assets/acl.jpg?raw=true)<br><br>
-[Exemplo](AntiCorruptionLayer)
+[Exemplo](../AntiCorruptionLayer)
 
 ## Ponto de vista<br>
 ![Image](../assets/point_of_view_among_placeholders.png?raw=true)<br><br>

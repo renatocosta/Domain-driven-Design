@@ -1,14 +1,13 @@
 <?php
 
-namespace Tests\BankSlipCoreDomain\Infrastructure\UseCase;
+namespace Tests\BankSlipCoreDomain\Application\UseCase;
 
 use BankSlipCoreDomain\Infrastructure\Services\EmailService;
 use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
-use BankSlipCoreDomain\Model\Document\Commands\Inputs\NewDocumentCommand;
-use BankSlipCoreDomain\Model\Document\Handlers\DocumentHandler;
+use BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs\NewDocumentCommand;
+use BankSlipCoreDomain\Application\Document\CommandHandlers\DocumentHandler;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
-use SharedKernel\Model\Commands\ICommandHandler;
-use SharedKernel\Model\Commands\TransactionalHandler;
+use CrossCutting\Application\CommandHandlers\TransactionalHandler;
 use Tests\BaseUnitTestCase;
 
 
