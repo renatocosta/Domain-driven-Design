@@ -18,7 +18,7 @@ Downstream o parceiro que necessita de algum recurso
 
 Upstream o parceiro que provê os recursos  
 
-Exemplos
+Workflow
 
 ![Image](../assets/chain_responsability.jpg?raw=true)
 
