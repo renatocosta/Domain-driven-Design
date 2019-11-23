@@ -8,11 +8,11 @@ use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
 use BankSlipCoreDomain\Model\Document\Specification\DocumentHasOverdueDate;
 use BankSlipCoreDomain\Model\Document\Specification\DocumentIsAbleTo;
-use CrossCutting\Infrastructure\Services\IEmailService;
-use CrossCutting\Application\CommandHandlers\Commands\Outputs\CommandResult;
-use CrossCutting\Application\CommandHandlers\Commands\Inputs\ICommand;
-use CrossCutting\Application\CommandHandlers\ICommandHandler;
-use CrossCutting\Application\CommandHandlers\Commands\Outputs\ICommandResult;
+use CrossCutting\Domain\Infrastructure\Services\IEmailService;
+use CrossCutting\Domain\Application\CommandHandlers\Commands\Outputs\CommandResult;
+use CrossCutting\Domain\Application\CommandHandlers\Commands\Inputs\ICommand;
+use CrossCutting\Domain\Application\CommandHandlers\ICommandHandler;
+use CrossCutting\Domain\Application\CommandHandlers\Commands\Outputs\ICommandResult;
 
 class DocumentHandler implements ICommandHandler
 {

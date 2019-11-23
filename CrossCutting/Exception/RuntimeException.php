@@ -1,6 +1,6 @@
 <?php
 
-namespace CrossCutting\Exception;
+namespace CrossCutting\Domain\Domain\Domain\Exception;
 
 use RuntimeException as Base;
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\CrossCutting\Model\ValueObjects\Identifier;
+namespace Tests\CrossCutting\Domain\Model\ValueObjects\Identifier;
 
-use CrossCutting\Model\ValueObjects\Identity\FindValueIn;
+use CrossCutting\Domain\Model\ValueObjects\Identity\FindValueIn;
 use Tests\BaseUnitTestCase;
 
 class EnumTest extends BaseUnitTestCase

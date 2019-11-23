@@ -5,8 +5,8 @@ namespace BankSlipCoreDomain\Model\Document\Entities;
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
 use BankSlipCoreDomain\Model\Document\Scopes\DocumentScopes;
 use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
-use CrossCutting\Model\Event\ValueObjects\AggregateRoot;
-use CrossCutting\Model\ValueObjects\Identity\Identified;
+use CrossCutting\Domain\Model\Event\ValueObjects\AggregateRoot;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
 
 class Document extends AggregateRoot
 {

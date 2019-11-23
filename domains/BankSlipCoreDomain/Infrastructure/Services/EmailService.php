@@ -2,7 +2,7 @@
 
 namespace BankSlipCoreDomain\Infrastructure\Services;
 
-use CrossCutting\Infrastructure\Services\IEmailService;
+use CrossCutting\Domain\Infrastructure\Services\IEmailService;
 
 class EmailService implements IEmailService
 {

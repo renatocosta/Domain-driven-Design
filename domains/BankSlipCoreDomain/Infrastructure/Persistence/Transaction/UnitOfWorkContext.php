@@ -2,7 +2,7 @@
 
 namespace BankSlipCoreDomain\Infrastructure\Transaction;
 
-use CrossCutting\Infrastructure\IUnitOfWorkContext;
+use CrossCutting\Domain\Infrastructure\IUnitOfWorkContext;
 
 class UnitOfWorkContext implements IUnitOfWorkContext
 {

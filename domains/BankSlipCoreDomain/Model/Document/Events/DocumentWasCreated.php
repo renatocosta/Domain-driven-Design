@@ -3,7 +3,7 @@
 namespace BankSlipCoreDomain\Model\Document\Entity;
 
 use BankSlipCoreDomain\Model\Document\Entities\Document;
-use CrossCutting\Application\Event\AbstractEvent;
+use CrossCutting\Domain\Application\Event\AbstractEvent;
 
 class DocumentWasCreated extends AbstractEvent
 {

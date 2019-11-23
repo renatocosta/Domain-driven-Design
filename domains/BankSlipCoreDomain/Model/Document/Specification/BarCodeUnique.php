@@ -3,7 +3,7 @@
 namespace BankSlipCoreDomain\Model\Document\Specification;
 
 use BankSlipCoreDomain\Model\Document\Repositories\IDocumentRepository;
-use CrossCutting\Model\Specification\CompositeSpecification;
+use CrossCutting\Domain\Model\Specification\CompositeSpecification;
 
 final class BarCodeUnique extends CompositeSpecification
 {

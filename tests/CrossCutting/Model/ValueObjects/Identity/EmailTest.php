@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\CrossCutting\Model\ValueObjects\Identifier;
+namespace Tests\CrossCutting\Domain\Model\ValueObjects\Identifier;
 
-use CrossCutting\Model\ValueObjects\Identity\Email;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Email;
 use Tests\BaseUnitTestCase;
 
 class EmailTest extends BaseUnitTestCase

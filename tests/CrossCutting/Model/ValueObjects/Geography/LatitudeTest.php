@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\CrossCutting\Model\ValueObjects\Geography;
+namespace Tests\CrossCutting\Domain\Model\ValueObjects\Geography;
 
-use CrossCutting\Model\ValueObjects\Geography\Latitude;
+use CrossCutting\Domain\Model\ValueObjects\Geography\Latitude;
 use Tests\BaseUnitTestCase;
 
 class LatitudeTest extends BaseUnitTestCase

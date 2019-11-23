@@ -7,8 +7,8 @@ use BankSlipCoreDomain\Model\Document\Repositories\IDocumentRepository;
 use BankSlipCoreDomain\Model\Enroll\Factories\EnrollFactory;
 use BankSlipCoreDomain\Model\Enroll\Factories\StatusIdFactory;
 use BankSlipCoreDomain\Model\Enroll\Repositories\IEnrollRepository;
-use CrossCutting\Application\Event\AbstractEvent;
-use CrossCutting\Application\Event\DomainEventHandler;
+use CrossCutting\Domain\Application\Event\AbstractEvent;
+use CrossCutting\Domain\Application\Event\DomainEventHandler;
 
 class DocumentWasCreatedEventHandler implements DomainEventHandler
 {

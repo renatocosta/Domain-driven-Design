@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\CrossCutting\Model\ValueObjects\Network;
+namespace Tests\CrossCutting\Domain\Model\ValueObjects\Network;
 
-use CrossCutting\Model\ValueObjects\Identity\Email;
-use CrossCutting\Model\ValueObjects\Network\Url;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Email;
+use CrossCutting\Domain\Model\ValueObjects\Network\Url;
 use Tests\BaseUnitTestCase;
 
 class UrlTest extends BaseUnitTestCase

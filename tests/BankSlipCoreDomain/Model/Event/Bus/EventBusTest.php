@@ -8,7 +8,7 @@ use BankSlipCoreDomain\Model\Document\Entity\DocumentWasChanged;
 use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
 use BankSlipCoreDomain\Application\Document\EventHandlers\DocumentWasCreatedEventHandler;
 use PHPUnit\Framework\TestCase;
-use CrossCutting\Application\Event\Bus\DomainEventBus;
+use CrossCutting\Domain\Application\Event\Bus\DomainEventBus;
 
 class EventBusTest extends TestCase
 {

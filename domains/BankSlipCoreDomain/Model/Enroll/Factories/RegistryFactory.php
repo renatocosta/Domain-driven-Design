@@ -6,8 +6,8 @@ use BankSlipCoreDomain\Model\Document\Entities\Document;
 use BankSlipCoreDomain\Model\Enroll\Entities\Enroll;
 use BankSlipCoreDomain\Model\Enroll\Entities\ValueObjects\StatusId;
 use Ramsey\Uuid\Uuid;
-use CrossCutting\Model\ValueObjects\Identity\Guid;
-use CrossCutting\Model\ValueObjects\Identity\Identified;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Guid;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
 
 class EnrollFactory
 {

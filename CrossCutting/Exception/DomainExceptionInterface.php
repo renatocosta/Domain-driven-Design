@@ -1,6 +1,6 @@
 <?php
 
-namespace CrossCutting\Exception;
+namespace CrossCutting\Domain\Exception;
 
 /**
  * Helper to catch every exception contained in this project.

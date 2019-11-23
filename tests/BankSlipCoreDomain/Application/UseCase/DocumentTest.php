@@ -7,7 +7,7 @@ use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs\NewDocumentCommand;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\DocumentHandler;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
-use CrossCutting\Application\CommandHandlers\TransactionalHandler;
+use CrossCutting\Domain\Application\CommandHandlers\TransactionalHandler;
 use Tests\BaseUnitTestCase;
 
 

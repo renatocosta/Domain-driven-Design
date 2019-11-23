@@ -2,7 +2,7 @@
 
 namespace BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs;
 
-use CrossCutting\Application\CommandHandlers\Commands\Inputs\ICommand;
+use CrossCutting\Domain\Application\CommandHandlers\Commands\Inputs\ICommand;
 
 class NewDocumentCommand implements ICommand
 {

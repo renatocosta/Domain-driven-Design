@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\CrossCutting\Model\ValueObjects\Geography;
+namespace Tests\CrossCutting\Domain\Model\ValueObjects\Geography;
 
-use CrossCutting\Model\ValueObjects\Geography\Longitude;
+use CrossCutting\Domain\Model\ValueObjects\Geography\Longitude;
 use Tests\BaseUnitTestCase;
 
 class LongitudeTest extends BaseUnitTestCase

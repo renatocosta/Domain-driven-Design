@@ -5,8 +5,8 @@ namespace BankSlipCoreDomain\Model\Enroll\Entities;
 use BankSlipCoreDomain\Model\Document\Entities\Document;
 use BankSlipCoreDomain\Model\Enroll\Entities\ValueObjects\StatusId;
 use BankSlipCoreDomain\Model\Enroll\Entity\EnrollWasCreated;
-use CrossCutting\Model\Event\ValueObjects\AggregateRoot;
-use CrossCutting\Model\ValueObjects\Identity\Identified;
+use CrossCutting\Domain\Model\Event\ValueObjects\AggregateRoot;
+use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
 
 class Enroll extends AggregateRoot
 {

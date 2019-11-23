@@ -3,7 +3,7 @@
 namespace BankSlipCoreDomain\Model\Enroll\Entity;
 
 use BankSlipCoreDomain\Model\Enroll\Entities\Enroll;
-use CrossCutting\Application\Event\AbstractEvent;
+use CrossCutting\Domain\Application\Event\AbstractEvent;
 
 class EnrollWasCreated extends AbstractEvent
 {

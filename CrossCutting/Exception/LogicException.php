@@ -1,6 +1,6 @@
 <?php
 
-namespace CrossCutting\Exception;
+namespace CrossCutting\Domain\Exception;
 
 use LogicException as Base;
 /**
