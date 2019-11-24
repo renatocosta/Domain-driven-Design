@@ -13,7 +13,7 @@
 ![Image](../assets/domains_and_subdomains.png?raw=true)<br><br>
 
 ## Linguagem onipresente<br>
-![Image](../assets/ubiquitous_language.gif?raw=true)<br><br>
+![Image](../assets/ubiquituos_language.png?raw=true)<br><br>
 
 # DDD tático
 
