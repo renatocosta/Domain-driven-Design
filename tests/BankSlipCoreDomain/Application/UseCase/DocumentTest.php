@@ -2,7 +2,7 @@
 
 namespace Tests\BankSlipCoreDomain\Application\UseCase;
 
-use BankSlipCoreDomain\Infrastructure\Services\EmailService;
+use BankSlipCoreDomain\Infrastructure\Services\Email;
 use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs\NewDocumentCommand;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\DocumentHandler;
@@ -28,7 +28,7 @@ class DocumentTest extends BaseUnitTestCase
             ->andReturn(0);
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
-        $documentHandler = new DocumentHandler(new EmailService(), $barCodeUnique);
+        $documentHandler = new DocumentHandler(new Email(), $barCodeUnique);
 
         $transactionalHandler = new TransactionalHandler($documentHandler, new UnitOfWorkContext());
         $result = $transactionalHandler->handle($command);
@@ -52,7 +52,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
 
-        $handlers = new DocumentHandler(new EmailService(), $barCodeUnique);
+        $handlers = new DocumentHandler(new Email(), $barCodeUnique);
         $result = $handlers->handle($command);
 
         $this->assertFalse($result->success());
@@ -74,7 +74,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
 
-        $handlers = new DocumentHandler(new EmailService(), $barCodeUnique);
+        $handlers = new DocumentHandler(new Email(), $barCodeUnique);
         $result = $handlers->handle($command);
 
         $this->assertFalse($result->success());

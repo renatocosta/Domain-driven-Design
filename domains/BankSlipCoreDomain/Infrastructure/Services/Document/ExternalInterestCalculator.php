@@ -2,9 +2,9 @@
 
 namespace BankSlipCoreDomain\Infrastructure\Services\Document;
 
-use BankSlipCoreDomain\Model\Document\Services\InterestCalculatorService;
+use BankSlipCoreDomain\Model\Document\Services\InterestCalculator;
 
-class ExternalInterestCalculatorService implements InterestCalculatorService
+class ExternalInterestCalculator implements InterestCalculator
 {
 
     public function calculate(string $dueDate): float

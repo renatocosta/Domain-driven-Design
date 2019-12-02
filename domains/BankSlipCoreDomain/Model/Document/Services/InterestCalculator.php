@@ -7,7 +7,7 @@ namespace BankSlipCoreDomain\Model\Document\Services;
  *
  * @author     Renato Costa
  */
-interface InterestCalculatorService
+interface InterestCalculator
 {
 
     /**
