@@ -5,7 +5,7 @@ Uma abordagem para modelagem de software que reúne conceitos, princípios e té
 
 <ul>
 <li>Domínio</li>
-<li>Design estratégico e tático</li>
+<li>Design estratégico</li>
 <li>Linguagem onipresente</li>
 <li>Modelos</li>
 <li>Bounded Context</li>
