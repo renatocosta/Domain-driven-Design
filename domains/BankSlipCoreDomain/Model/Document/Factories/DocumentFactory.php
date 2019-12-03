@@ -4,6 +4,7 @@ namespace BankSlipCoreDomain\Model\Document\Factories;
 
 use BankSlipCoreDomain\Model\Document\Entities\Document;
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
+use BankSlipCoreDomain\Model\Enroll\Entities\Enroll;
 use Ramsey\Uuid\Uuid;
 use CrossCutting\Domain\Model\ValueObjects\Identity\Guid;
 use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
@@ -19,7 +20,7 @@ class DocumentFactory
         return $document;
     }
 
-    public static function createFromWithRegister(Identified $identified): Enroll
+    public static function createFromRegister(Identified $identified): Enroll
     {
        // return Enroll::creta($identified->getId());
     }

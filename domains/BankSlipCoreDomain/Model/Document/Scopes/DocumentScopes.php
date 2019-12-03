@@ -14,7 +14,7 @@ final class DocumentScopes
      */
     private $errors;
 
-    public function createScopeIsValid(Document $document): bool
+    public function isScopeValid(Document $document): bool
     {
 
         $this->errors = [];
@@ -32,7 +32,7 @@ final class DocumentScopes
 
     }
 
-    public function anyError(): bool
+    public function thereWasAnyErrors(): bool
     {
        return count($this->errors) > 0;
     }

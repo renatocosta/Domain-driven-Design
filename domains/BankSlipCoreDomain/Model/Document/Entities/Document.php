@@ -48,7 +48,7 @@ class Document extends AggregateRoot
         $this->barCode = $barCode;
 
         $this->scope = new DocumentScopes();
-        $this->scope->createScopeIsValid($this);
+        $this->scope->isScopeValid($this);
         $this->checkDueDateLessOrEqualThanNow();
 
         if (!$this->isValid()) {
@@ -87,7 +87,7 @@ class Document extends AggregateRoot
 
     public function isValid(): bool
     {
-        $isValid = !$this->scope->anyError() && count($this->errors) === 0;
+        $isValid = !$this->scope->thereWasAnyErrors() && count($this->errors) === 0;
 
         return $isValid;
     }
