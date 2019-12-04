@@ -17,7 +17,7 @@ class ChainHandlerFactory
 
     private static $incomeData;
 
-    private static $handlers = [];
+    private static $handlers;
 
     private static function statements(): void
     {
@@ -27,10 +27,11 @@ class ChainHandlerFactory
         $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
         $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository(self::$incomeData, $modernCoreLegacyRepository);
 
-        self::$handlers['remittance'] = ['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]];
-        self::$handlers['discharge']  = ['class' =>  DischargeHandler::class];
-        self::$handlers['ted']        = ['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]];
-        self::$handlers['tef']        = ['class' =>  TEFHandler::class];
+        self::$handlers = new \SplDoublyLinkedList();
+        self::$handlers->push(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
+        self::$handlers->push(['class' =>  DischargeHandler::class]);
+        self::$handlers->push(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
+        self::$handlers->push(['class' =>  TEFHandler::class]);
 
     }
 
@@ -39,10 +40,12 @@ class ChainHandlerFactory
 
         $chain = null;
 
-        foreach (self::$handlers as $name => $handler) {
+        for(self::$handlers->rewind(); self::$handlers->valid(); self::$handlers->next()){
+
+            $handler = self::$handlers->current();
 
             if (empty($handler['class'])) {
-                throw new \OutOfBoundsException(sprintf('No such class name %s for the handler %s', $handler['class'], $name));
+                throw new \OutOfBoundsException('Class must be filled');
             }
 
             $handlerClass = new \ReflectionClass($handler['class']);
@@ -56,7 +59,6 @@ class ChainHandlerFactory
             $arguments = $handler['dependencies'];
             array_unshift($arguments, $chain);
             $chain = $handlerClass->newInstanceArgs($arguments);
-
         }
 
         return $chain;
