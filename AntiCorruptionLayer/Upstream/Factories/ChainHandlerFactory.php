@@ -15,26 +15,61 @@ use AntiCorruptionLayer\Upstream\UpstreamHandler;
 class ChainHandlerFactory
 {
 
+    private static $incomeData;
+
+    private static $handlers = [];
+
+    private static function statements(): void
+    {
+        $modernMMLRepository = new ModernMMLRepository();
+        $translatorMMLRepository = new TranslatorMMLRepository(self::$incomeData, $modernMMLRepository);
+
+        $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
+        $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository(self::$incomeData, $modernCoreLegacyRepository);
+
+        self::$handlers['remittance'] = ['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]];
+        self::$handlers['discharge']  = ['class' =>  DischargeHandler::class];
+        self::$handlers['ted']        = ['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]];
+        self::$handlers['tef']        = ['class' =>  TEFHandler::class];
+
+    }
+
+    private static function dispatch(): UpstreamHandler
+    {
+
+        $chain = null;
+
+        foreach (self::$handlers as $name => $handler) {
+
+            if (empty($handler['class'])) {
+                throw new \OutOfBoundsException(sprintf('No such class name %s for the handler %s', $handler['class'], $name));
+            }
+
+            $handlerClass = new \ReflectionClass($handler['class']);
+
+            if (empty($handler['dependencies'])) {
+                $arguments = [$chain];
+                $chain = $handlerClass->newInstanceArgs($arguments);
+                continue;
+            }
+
+            $arguments = $handler['dependencies'];
+            array_unshift($arguments, $chain);
+            $chain = $handlerClass->newInstanceArgs($arguments);
+
+        }
+
+        return $chain;
+
+    }
+
     public static function create(array $incomeData): UpstreamHandler
     {
 
-        //Dependencies
-        $modernMMLRepository = new ModernMMLRepository();
-        $translatorMMLRepository = new TranslatorMMLRepository($incomeData, $modernMMLRepository);
+        self::$incomeData = $incomeData;
+        self::statements();
 
-        $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
-        $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository($incomeData, $modernCoreLegacyRepository);
-
-
-        //Handlers
-
-        //MML
-        $discharge = new DischargeHandler();
-        $remittance = new RemittanceHandler($discharge, $translatorMMLRepository);
-
-        //Core-legacy
-        $ted = new TEDHandler($remittance, $translatorCoreLegacyRepository);
-        $chain = new TEFHandler($ted);
+        $chain = self::dispatch();
 
         return $chain;
 
