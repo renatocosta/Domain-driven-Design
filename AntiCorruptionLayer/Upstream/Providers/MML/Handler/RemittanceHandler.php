@@ -10,8 +10,6 @@ use Psr\Http\Message\RequestInterface;
 class RemittanceHandler extends UpstreamHandler
 {
 
-    private $criteria = '/cnab-manager/remittance';
-
     private $translatorRepository;
 
     /**
@@ -26,10 +24,11 @@ class RemittanceHandler extends UpstreamHandler
 
     protected function processing(RequestInterface $request): ?string
     {
+
         if ($request->getUri()->getPath() === EndpointsEnum::CNAB_MANAGER_REMITTANCE) {
             //May calls right here some e.g command handler, service or something else
             //$this->translatorRepository->save();
-            return $this->criteria;
+            return EndpointsEnum::CNAB_MANAGER_REMITTANCE;
         }
 
         return null;

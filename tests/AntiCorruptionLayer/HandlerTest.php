@@ -2,23 +2,24 @@
 
 namespace Tests\AntiCorruptionLayer;
 
+use AntiCorruptionLayer\Upstream\ChainHandler;
 use AntiCorruptionLayer\Upstream\Enum\EndpointsEnum;
-use AntiCorruptionLayer\Upstream\Factories\ChainHandlerFactory;
 use AntiCorruptionLayer\Upstream\NothingToDoHandler;
+use AntiCorruptionLayer\Upstream\UpstreamHandler;
 use Tests\BaseUnitTestCase;
 
 class HandlerTest extends BaseUnitTestCase
 {
 
     /**
-     * @var Handler
+     * @var UpstreamHandler
      */
     private $chain;
 
     protected function setUp(): void
     {
         $incomeData = $this->faker()->words;
-        $this->chain = ChainHandlerFactory::create($incomeData);
+        $this->chain = new ChainHandler($incomeData);
     }
 
     public function endPoints(): array
@@ -28,7 +29,7 @@ class HandlerTest extends BaseUnitTestCase
 
     /**
      * @param string $endpoint
-     * @dataProvider endPoints
+     * @dataProvider  endPoints
      */
     public function testShouldHandlingProviders(string $endpoint)
     {
@@ -37,8 +38,7 @@ class HandlerTest extends BaseUnitTestCase
 
         $request = $this->createMock('Psr\Http\Message\RequestInterface');
         $request->method('getUri')->willReturn($uri);
-
-        $this->assertSame($endpoint, $this->chain->handle($request));
+        $this->assertSame($endpoint, $this->chain->chain()->handle($request));
     }
 
 }

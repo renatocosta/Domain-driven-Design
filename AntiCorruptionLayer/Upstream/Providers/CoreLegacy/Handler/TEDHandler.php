@@ -28,7 +28,7 @@ class TEDHandler extends UpstreamHandler
         if ($request->getUri()->getPath() === EndpointsEnum::CORE_LEGACY_TED) {
             //May calls right here some e.g command handler, service or something else
             //$this->translatorRepository->save();
-            return $this->criteria;
+            return EndpointsEnum::CORE_LEGACY_TED;
         }
 
         return null;

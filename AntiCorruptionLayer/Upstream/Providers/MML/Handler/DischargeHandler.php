@@ -20,7 +20,7 @@ class DischargeHandler extends UpstreamHandler
     protected function processing(RequestInterface $request): ?string
     {
         if ($request->getUri()->getPath() === EndpointsEnum::CNAB_MANAGER_DISCHARGE) {
-            return $this->criteria;
+            return EndpointsEnum::CNAB_MANAGER_DISCHARGE;
         }
 
         return null;

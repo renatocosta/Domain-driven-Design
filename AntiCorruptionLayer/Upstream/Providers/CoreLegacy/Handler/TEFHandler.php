@@ -13,7 +13,7 @@ class TEFHandler extends UpstreamHandler
     {
 
         if ($request->getUri()->getPath() === EndpointsEnum::CORE_LEGACY_TEF) {
-            return $this->criteria;
+            return EndpointsEnum::CORE_LEGACY_TEF;
         }
 
         return null;
