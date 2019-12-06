@@ -40,7 +40,7 @@ class ChainHandler
 
     }
 
-    private function create(): void
+    private function populate(): void
     {
 
         $this->chain = null;
@@ -72,7 +72,7 @@ class ChainHandler
 
         $this->incomeData = $incomeData;
         $this->statements();
-        $this->create();
+        $this->populate();
 
     }
 
