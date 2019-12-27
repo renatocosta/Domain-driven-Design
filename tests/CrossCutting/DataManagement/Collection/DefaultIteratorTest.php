@@ -64,7 +64,8 @@ class DefaultIteratorTest extends BaseUnitTestCase
 
     private function getIterator() : DefaultIterator
     {
-        $iterator = new DefaultIterator($this->getCollection());
+        $iterator = $this->getCollection()
+                         ->getIterator();
         $iterator->rewind();
 
         return $iterator;

@@ -6,7 +6,7 @@ class DefaultIterator implements \Iterator
 {
 
     /**
-     * @var \SplDoublyLinkedList
+     * @var SplDoublyLinkedList
      */
     private $items;
 

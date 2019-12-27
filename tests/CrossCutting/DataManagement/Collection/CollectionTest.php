@@ -25,10 +25,10 @@ class CollectionTest extends BaseUnitTestCase
         $collection->addItem(['class' =>  \stdClass::class, 'dependencies' => []]);
 
 
-        $iterator = new DefaultIterator($collection);
+        $iterator = $collection->getIterator();
         $iterator->rewind();
 
-        $this->assertEquals(new DefaultIterator($collection), $collection->getIterator());
+        $this->assertEquals(new DefaultIterator($collection), $iterator);
         $this->assertEquals(['class' =>  \stdClass::class], $collection->getItems()->current());
         $iterator->next();
         $this->assertEquals(['class' =>  \stdClass::class, 'dependencies' => []], $collection->getItems()->current());
