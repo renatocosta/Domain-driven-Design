@@ -1,0 +1,51 @@
+s\AntiCorruptionLayer\Handler
+ [x] Should handling providers 
+
+s\BankSlipCoreDomain\Application\UseCase\Document
+ [x] Should add
+ [x] Should fail to unique bar code when add new bill
+ [x] Should fail to empty values when add new bill
+
+s\BankSlipCoreDomain\Model\Event\Bus\EventBus
+ [x] Should fail to unsubscribed event in handler
+ [x] Should subscribe event in handler
+
+s\BankSlipCoreDomain\Model\Specification\Specification
+ [x] Should satisfy by bar code unique
+
+s\CrossCutting\DataManagement\Collection\Collection
+ [x] Empty items collection
+ [x] Items collection with item elements
+
+s\CrossCutting\DataManagement\Collection\DefaultIterator
+ [x] Current
+ [x] Next
+ [x] Key
+ [x] Valid if item invalid
+ [x] Valid if item is valid
+ [x] Rewind
+
+s\CrossCutting\Domain\Model\ValueObjects\Geography\Latitude
+ [x] Should return latitude
+ [x] Should throws exception 
+
+s\CrossCutting\Domain\Model\ValueObjects\Geography\Longitude
+ [x] Should return latitude
+ [x] Should throws exception 
+
+s\CrossCutting\Domain\Model\ValueObjects\Identifier\Email
+ [x] Should return email
+ [x] It should fail to invalid 
+
+s\CrossCutting\Domain\Model\ValueObjects\Identifier\Enum
+ [x] Should throw invalid enum exception
+ [x] Should return enum value
+
+s\CrossCutting\Domain\Model\ValueObjects\Identifier\Guid
+ [x] Should fail to not equals vo
+ [x] Should fail to invalid uuid
+
+s\CrossCutting\Domain\Model\ValueObjects\Network\Url
+ [x] Should return url
+ [x] It should fail to invalid 
+
