@@ -10,13 +10,18 @@ use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Downstream\Translator\Tran
 use AntiCorruptionLayer\Upstream\Providers\MML\Handler\DischargeHandler;
 use AntiCorruptionLayer\Upstream\Providers\MML\Handler\RemittanceHandler;
 use AntiCorruptionLayer\Upstream\Providers\MML\Downstream\Translator\TranslatorMMLRepository;
+use CrossCutting\DataManagement\Collection\Collection;
+use CrossCutting\DataManagement\Collection\DefaultIterator;
 
 class ChainHandler
 {
 
     private $incomeData;
 
-    private  $handlers;
+    /**
+     * @var Collection
+     */
+    private  $handlersCollection;
 
     /**
      * @var UpstreamHandler
@@ -32,11 +37,11 @@ class ChainHandler
         $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
         $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository($this->incomeData, $modernCoreLegacyRepository);
 
-        $this->handlers = new \SplDoublyLinkedList();
-        $this->handlers->push(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
-        $this->handlers->push(['class' =>  DischargeHandler::class]);
-        $this->handlers->push(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
-        $this->handlers->push(['class' =>  TEFHandler::class]);
+        $this->handlersCollection = new Collection();
+        $this->handlersCollection->addItem(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
+        $this->handlersCollection->addItem(['class' =>  DischargeHandler::class]);
+        $this->handlersCollection->addItem(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
+        $this->handlersCollection->addItem(['class' =>  TEFHandler::class]);
 
     }
 
@@ -44,10 +49,13 @@ class ChainHandler
     {
 
         $this->chain = null;
+        $handlers = new DefaultIterator($this->handlersCollection);
+        $handlers->rewind();
 
-        for($this->handlers->rewind(); $this->handlers->valid(); $this->handlers->next()){
+        while($handlers->valid()) {
 
-            $handler = $this->handlers->current();
+            $handler = $handlers->current();
+            $handlers->next();
 
             if (empty($handler['class'])) {
                 throw new \OutOfBoundsException('Class required');
@@ -64,7 +72,9 @@ class ChainHandler
             $arguments = $handler['dependencies'];
             array_unshift($arguments, $this->chain);
             $this->chain = $handlerClass->newInstanceArgs($arguments);
+
         }
+
     }
 
     public function __construct(array $incomeData)
