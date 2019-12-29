@@ -21,8 +21,8 @@ class CollectionTest extends BaseUnitTestCase
     public function testItemsCollectionWithItemElements()
     {
         $collection = new Collection();
-        $collection->addItem(['class' =>  \stdClass::class]);
-        $collection->addItem(['class' =>  \stdClass::class, 'dependencies' => []]);
+        $collection->add(['class' =>  \stdClass::class]);
+        $collection->add(['class' =>  \stdClass::class, 'dependencies' => []]);
 
 
         $iterator = $collection->getIterator();

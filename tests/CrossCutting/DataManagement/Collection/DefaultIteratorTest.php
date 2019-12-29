@@ -75,8 +75,8 @@ class DefaultIteratorTest extends BaseUnitTestCase
     {
 
         $collection = new Collection();
-        $collection->addItem(['class' =>  \stdClass::class]);
-        $collection->addItem(['class' =>  \stdClass::class, 'dependencies' => []]);
+        $collection->add(['class' =>  \stdClass::class]);
+        $collection->add(['class' =>  \stdClass::class, 'dependencies' => []]);
 
         return $collection;
 

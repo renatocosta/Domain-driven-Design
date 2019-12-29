@@ -2,25 +2,27 @@
 
 namespace CrossCutting\Domain\Application\Event\Bus;
 
+use CrossCutting\DataManagement\Collection\Collection;
+use CrossCutting\DataManagement\Collection\DefaultIterator;
 use CrossCutting\Domain\Application\Event\AbstractEvent;
 use CrossCutting\Domain\Application\Event\DomainEventHandler;
 
 class DomainEventBus {
 
     /**
-     * @var DomainEventHandler[]
+     * @var Collection
      */
     private $eventHandlers;
+
+    /**
+     * @var DefaultIterator
+     */
+    private $iterator;
 
     /**
      * @var DomainEventBus
      */
     private static $instance = null;
-
-    /**
-     * @var int
-     */
-    private $id = 0;
 
     public static function instance(): self
     {
@@ -34,7 +36,9 @@ class DomainEventBus {
 
     private function __construct()
     {
-        $this->eventHandlers = [];
+        $this->eventHandlers = new Collection();
+        $this->iterator = $this->eventHandlers->getIterator();
+        $this->iterator->rewind();
     }
 
     public function __clone()
@@ -44,18 +48,23 @@ class DomainEventBus {
 
     public function subscribe(DomainEventHandler $aDomainEventHandler): void
     {
-        $id = $this->id;
-        $this->eventHandlers[$id] = $aDomainEventHandler;
-        $this->id++;
+        $this->eventHandlers->add($aDomainEventHandler);
     }
 
     public function publish(AbstractEvent $aDomainEvent): void
     {
-        foreach ($this->eventHandlers as $aEventHandler) {
-            if ($aEventHandler->isSubscribedTo($aDomainEvent)) {
-                $aEventHandler->handle($aDomainEvent);
+
+        while($this->iterator->valid()) {
+
+            $eventHandler = $this->iterator->current();
+
+            if ($eventHandler->isSubscribedTo($aDomainEvent)) {
+                $eventHandler->handle($aDomainEvent);
             }
+
+            $this->iterator->next();
         }
+
     }
 
 }

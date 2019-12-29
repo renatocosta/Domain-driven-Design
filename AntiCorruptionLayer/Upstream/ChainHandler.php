@@ -38,10 +38,10 @@ class ChainHandler
         $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository($this->incomeData, $modernCoreLegacyRepository);
 
         $this->handlersCollection = new Collection();
-        $this->handlersCollection->addItem(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
-        $this->handlersCollection->addItem(['class' =>  DischargeHandler::class]);
-        $this->handlersCollection->addItem(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
-        $this->handlersCollection->addItem(['class' =>  TEFHandler::class]);
+        $this->handlersCollection->add(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
+        $this->handlersCollection->add(['class' =>  DischargeHandler::class]);
+        $this->handlersCollection->add(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
+        $this->handlersCollection->add(['class' =>  TEFHandler::class]);
 
     }
 

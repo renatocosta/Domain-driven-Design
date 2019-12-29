@@ -28,7 +28,10 @@ class Collection implements \IteratorAggregate
         return $this->items->count();
     }
 
-    public function addItem(array $item): void
+    /**
+     * @param mixed $item
+     */
+    public function add($item): void
     {
         $this->items->push($item);
     }
