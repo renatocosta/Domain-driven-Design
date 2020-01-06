@@ -17,7 +17,7 @@ class DefaultIteratorTest extends BaseUnitTestCase
         $this->assertEquals(['class' =>  \stdClass::class], $current);
     }
 
-    public function testNext()
+    public function testNextOne()
     {
         $iterator = $this->getIterator();
         $iterator->next();

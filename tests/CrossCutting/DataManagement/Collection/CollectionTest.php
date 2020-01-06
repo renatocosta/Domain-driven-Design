@@ -13,7 +13,7 @@ class CollectionTest extends BaseUnitTestCase
     {
         $collection = new Collection();
 
-        $this->assertEquals(new DefaultIterator($collection), $collection->getIterator());
+        $this->assertEquals(new DefaultIterator($collection->getItems()), $collection->getIterator());
 
         $this->assertEquals(0, $collection->count());
     }
@@ -28,7 +28,7 @@ class CollectionTest extends BaseUnitTestCase
         $iterator = $collection->getIterator();
         $iterator->rewind();
 
-        $this->assertEquals(new DefaultIterator($collection), $iterator);
+        $this->assertEquals(new DefaultIterator($collection->getItems()), $iterator);
         $this->assertEquals(['class' =>  \stdClass::class], $collection->getItems()->current());
         $iterator->next();
         $this->assertEquals(['class' =>  \stdClass::class, 'dependencies' => []], $collection->getItems()->current());

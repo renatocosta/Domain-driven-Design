@@ -2,10 +2,10 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-class Collection implements \IteratorAggregate
+class Collection implements \IteratorAggregate, Item, \Countable
 {
 
-    /** @var SplDoublyLinkedList */
+    /** @var \Iterator  */
     private $items;
 
     public function __construct()
@@ -13,12 +13,12 @@ class Collection implements \IteratorAggregate
        $this->items = new \SplDoublyLinkedList();
     }
 
-    public function getIterator(): DefaultIterator
+    public function getIterator(): \Iterator
     {
-        return new DefaultIterator($this);
+        return new DefaultIterator($this->getItems());
     }
 
-    public function getItems(): \SplDoublyLinkedList
+    public function getItems(): \Iterator
     {
         return $this->items;
     }
@@ -28,9 +28,6 @@ class Collection implements \IteratorAggregate
         return $this->items->count();
     }
 
-    /**
-     * @param mixed $item
-     */
     public function add($item): void
     {
         $this->items->push($item);

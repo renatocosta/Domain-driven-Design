@@ -6,13 +6,13 @@ class DefaultIterator implements \Iterator
 {
 
     /**
-     * @var SplDoublyLinkedList
+     * @var \Iterator
      */
     private $items;
 
-    public function __construct(Collection $collection)
+    public function __construct(\Iterator $items)
     {
-        $this->items = $collection->getItems();
+        $this->items = $items;
     }
 
     public function current(): array

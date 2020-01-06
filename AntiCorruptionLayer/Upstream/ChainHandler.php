@@ -49,7 +49,7 @@ class ChainHandler
     {
 
         $this->chain = null;
-        $handlers = new DefaultIterator($this->handlersCollection);
+        $handlers = new DefaultIterator($this->handlersCollection->getItems());
         $handlers->rewind();
 
         while($handlers->valid()) {

@@ -19,7 +19,7 @@ s\CrossCutting\DataManagement\Collection\Collection
 
 s\CrossCutting\DataManagement\Collection\DefaultIterator
  [x] Current
- [x] Next
+ [x] Next one
  [x] Key
  [x] Valid if item invalid
  [x] Valid if item is valid
