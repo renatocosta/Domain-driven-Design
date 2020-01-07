@@ -2,7 +2,7 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-interface Item
+interface Item extends \IteratorAggregate, \Countable
 {
 
     /**
@@ -14,5 +14,10 @@ interface Item
      * @param mixed $item
      */
     public function add($item): void;
+
+    /**
+     * @return bool
+     */
+    public function isEmpty(): bool;
 
 }

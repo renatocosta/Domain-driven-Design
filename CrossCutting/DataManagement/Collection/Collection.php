@@ -2,7 +2,7 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-class Collection implements \IteratorAggregate, Item, \Countable
+class Collection  implements Item
 {
 
     /** @var \Iterator  */
@@ -31,6 +31,11 @@ class Collection implements \IteratorAggregate, Item, \Countable
     public function add($item): void
     {
         $this->items->push($item);
+    }
+
+    public function isEmpty(): bool
+    {
+        return $this->items->isEmpty();
     }
 
 }
