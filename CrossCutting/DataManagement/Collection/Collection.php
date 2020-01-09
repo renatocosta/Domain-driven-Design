@@ -2,7 +2,7 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-class Collection implements Item, \IteratorAggregate
+class Collection implements ItemAggregator
 {
 
     /** @var \Iterator  */
