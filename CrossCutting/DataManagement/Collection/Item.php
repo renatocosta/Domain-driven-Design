@@ -2,7 +2,7 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-interface Item extends \IteratorAggregate, \Countable
+interface Item extends \Countable
 {
 
     /**
