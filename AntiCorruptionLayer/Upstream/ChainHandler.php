@@ -35,8 +35,8 @@ class ChainHandler
     private function statements(): void
     {
         $dependencies = new DependenciesProvider($this->incomeData);
-        $handlersEnum = new HandlersProvider($dependencies, new Collection());
-        $this->handlers = $handlersEnum->handlers();
+        $handlers = new HandlersProvider($dependencies, new Collection());
+        $this->handlers = $handlers->handlers();
 
     }
 
@@ -45,8 +45,7 @@ class ChainHandler
 
         $this->chain = null;
         $handlers = new DefaultIterator($this->handlers->getItems());
-        $handlers->rewind();
-
+        
         while ($handlers->valid()) {
 
             $handler = $handlers->current();

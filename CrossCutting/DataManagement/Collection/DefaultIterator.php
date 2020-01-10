@@ -13,6 +13,7 @@ class DefaultIterator implements \Iterator
     public function __construct(\Iterator $items)
     {
         $this->items = $items;
+        $this->rewind();
     }
 
     public function current(): array
