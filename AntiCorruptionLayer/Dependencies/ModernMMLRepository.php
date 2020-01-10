@@ -11,9 +11,9 @@ class ModernMMLRepository implements IModernRepository
     public function getAll(): array
     {
         return [
-                ['name' => 'Renato - modern MML'],
-                ['name' => 'Ricardo - modern MML']
-               ];
+            ['name' => 'Renato - modern MML'],
+            ['name' => 'Ricardo - modern MML']
+        ];
     }
 
     public function save(array $values): void

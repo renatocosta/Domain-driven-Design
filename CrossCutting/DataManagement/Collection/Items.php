@@ -2,7 +2,7 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-interface Item extends \Countable
+interface Items extends \Countable
 {
 
     /**

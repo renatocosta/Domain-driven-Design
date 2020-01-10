@@ -14,7 +14,7 @@ class DefaultIteratorTest extends BaseUnitTestCase
         $iterator = $this->getIterator();
         $current = $iterator->current();
 
-        $this->assertEquals(['class' =>  \stdClass::class], $current);
+        $this->assertEquals(['class' => \stdClass::class], $current);
     }
 
     public function testNextOne()
@@ -62,21 +62,21 @@ class DefaultIteratorTest extends BaseUnitTestCase
         $this->assertEquals(0, $iterator->key());
     }
 
-    private function getIterator() : DefaultIterator
+    private function getIterator(): DefaultIterator
     {
         $iterator = $this->getCollection()
-                         ->getIterator();
+            ->getIterator();
         $iterator->rewind();
 
         return $iterator;
     }
 
-    private function getCollection() : Collection
+    private function getCollection(): Collection
     {
 
         $collection = new Collection();
-        $collection->add(['class' =>  \stdClass::class]);
-        $collection->add(['class' =>  \stdClass::class, 'dependencies' => []]);
+        $collection->add(['class' => \stdClass::class]);
+        $collection->add(['class' => \stdClass::class, 'dependencies' => []]);
 
         return $collection;
 

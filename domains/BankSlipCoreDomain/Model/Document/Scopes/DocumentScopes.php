@@ -23,7 +23,7 @@ final class DocumentScopes
             Assert::that($document->getDueDate(), 'Due Date can not be empty')->notBlank();
             Assert::that($document->getDueDate(), 'Due Date invalid format')->date('Y-m-d');
             Assert::that($document->getBarCode(), 'Bar code can not be empty')->notBlank();
-        } catch(AssertionFailedException $e) {
+        } catch (AssertionFailedException $e) {
             $this->errors[] = $e->getMessage();
             return false;
         }
@@ -34,7 +34,7 @@ final class DocumentScopes
 
     public function thereWasAnyErrors(): bool
     {
-       return count($this->errors) > 0;
+        return count($this->errors) > 0;
     }
 
     public function fetchErrors(): array

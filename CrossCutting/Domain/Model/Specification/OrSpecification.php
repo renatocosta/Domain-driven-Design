@@ -8,7 +8,7 @@ class OrSpecification extends CompositeSpecification
      * @var Specification
      */
     private $one;
-    
+
     /**
      * @var Specification
      */
@@ -20,7 +20,7 @@ class OrSpecification extends CompositeSpecification
      */
     public function __construct(Specification $one, Specification $other)
     {
-        $this->one   = $one;
+        $this->one = $one;
         $this->other = $other;
     }
 

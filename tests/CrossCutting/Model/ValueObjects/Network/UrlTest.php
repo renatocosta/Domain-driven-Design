@@ -2,7 +2,6 @@
 
 namespace Tests\CrossCutting\Domain\Model\ValueObjects\Network;
 
-use CrossCutting\Domain\Model\ValueObjects\Identity\Email;
 use CrossCutting\Domain\Model\ValueObjects\Network\Url;
 use Tests\BaseUnitTestCase;
 

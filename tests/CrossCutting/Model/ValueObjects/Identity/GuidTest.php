@@ -3,10 +3,10 @@
 namespace Tests\CrossCutting\Domain\Model\ValueObjects\Identifier;
 
 use Assert\InvalidArgumentException;
-use PHPUnit\Framework\TestCase;
-use Ramsey\Uuid\Uuid;
 use CrossCutting\Domain\Model\ValueObjects\Identity\Guid;
 use CrossCutting\Domain\Model\ValueObjects\Identity\GuidIdentified;
+use PHPUnit\Framework\TestCase;
+use Ramsey\Uuid\Uuid;
 
 class GuidTest extends TestCase
 {

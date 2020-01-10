@@ -7,7 +7,8 @@ use CrossCutting\DataManagement\Collection\DefaultIterator;
 use CrossCutting\Domain\Application\Event\AbstractEvent;
 use CrossCutting\Domain\Application\Event\DomainEventHandler;
 
-class DomainEventBus {
+class DomainEventBus
+{
 
     /**
      * @var Collection
@@ -54,7 +55,7 @@ class DomainEventBus {
     public function publish(AbstractEvent $aDomainEvent): void
     {
 
-        while($this->iterator->valid()) {
+        while ($this->iterator->valid()) {
 
             $eventHandler = $this->iterator->current();
 

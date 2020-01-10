@@ -2,10 +2,10 @@
 
 namespace Tests\BankSlipCoreDomain\Application\UseCase;
 
-use BankSlipCoreDomain\Infrastructure\Services\Email;
-use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs\NewDocumentCommand;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\DocumentHandler;
+use BankSlipCoreDomain\Infrastructure\Services\Email;
+use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
 use CrossCutting\Domain\Application\CommandHandlers\TransactionalHandler;
 use Tests\BaseUnitTestCase;
@@ -18,7 +18,7 @@ class DocumentTest extends BaseUnitTestCase
     {
 
         $dtActual = date('Y-m-d');
-        $dueDate = date('Y-m-d', strtotime($dtActual. ' + 1 month'));
+        $dueDate = date('Y-m-d', strtotime($dtActual . ' + 1 month'));
 
         $command = new NewDocumentCommand('0987987289789278972', $dueDate);
 
@@ -42,7 +42,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $totalBarcodeInDb = 1;
         $dtActual = date('Y-m-d');
-        $dueDate = date('Y-m-d', strtotime($dtActual. ' - 2 month'));
+        $dueDate = date('Y-m-d', strtotime($dtActual . ' - 2 month'));
 
         $command = new NewDocumentCommand('0987987289789278972', $dueDate);
         $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();
@@ -64,7 +64,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $totalBarcodeInDb = 1;
         $dtActual = date('Y-m-d');
-        $dueDate = date('Y-m-d', strtotime($dtActual. ' - 8 month'));
+        $dueDate = date('Y-m-d', strtotime($dtActual . ' - 8 month'));
 
         $command = new NewDocumentCommand('', $dueDate);
         $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepository')->makePartial();

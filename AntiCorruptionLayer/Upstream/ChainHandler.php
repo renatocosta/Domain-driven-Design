@@ -2,16 +2,11 @@
 
 namespace AntiCorruptionLayer\Upstream;
 
-use AntiCorruptionLayer\Dependencies\ModernCoreLegacyRepository;
-use AntiCorruptionLayer\Dependencies\ModernMMLRepository;
-use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Handler\TEDHandler;
-use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Handler\TEFHandler;
-use AntiCorruptionLayer\Upstream\Providers\CoreLegacy\Downstream\Translator\TranslatorCoreLegacyRepository;
-use AntiCorruptionLayer\Upstream\Providers\MML\Handler\DischargeHandler;
-use AntiCorruptionLayer\Upstream\Providers\MML\Handler\RemittanceHandler;
-use AntiCorruptionLayer\Upstream\Providers\MML\Downstream\Translator\TranslatorMMLRepository;
+use AntiCorruptionLayer\Dependencies\DependenciesProvider;
+use AntiCorruptionLayer\Upstream\Providers\HandlersProvider;
 use CrossCutting\DataManagement\Collection\Collection;
 use CrossCutting\DataManagement\Collection\DefaultIterator;
+use CrossCutting\DataManagement\Collection\Items;
 
 class ChainHandler
 {
@@ -19,40 +14,40 @@ class ChainHandler
     private $incomeData;
 
     /**
-     * @var Collection
+     * @var Items
      */
-    private  $handlersCollection;
+    private $handlers;
 
     /**
      * @var UpstreamHandler
      */
     private $chain;
 
-    private function statements(): void
+    public function __construct(array $incomeData)
     {
 
-        $modernMMLRepository = new ModernMMLRepository();
-        $translatorMMLRepository = new TranslatorMMLRepository($this->incomeData, $modernMMLRepository);
-
-        $modernCoreLegacyRepository = new ModernCoreLegacyRepository();
-        $translatorCoreLegacyRepository = new TranslatorCoreLegacyRepository($this->incomeData, $modernCoreLegacyRepository);
-
-        $this->handlersCollection = new Collection();
-        $this->handlersCollection->add(['class' =>  RemittanceHandler::class, 'dependencies' => [$translatorMMLRepository]]);
-        $this->handlersCollection->add(['class' =>  DischargeHandler::class]);
-        $this->handlersCollection->add(['class' =>  TEDHandler::class,        'dependencies' => [$translatorCoreLegacyRepository]]);
-        $this->handlersCollection->add(['class' =>  TEFHandler::class]);
+        $this->incomeData = $incomeData;
+        $this->statements();
+        $this->apply();
 
     }
 
-    private function populate(): void
+    private function statements(): void
+    {
+        $dependencies = new DependenciesProvider($this->incomeData);
+        $handlersEnum = new HandlersProvider($dependencies, new Collection());
+        $this->handlers = $handlersEnum->handlers();
+
+    }
+
+    private function apply(): void
     {
 
         $this->chain = null;
-        $handlers = new DefaultIterator($this->handlersCollection->getItems());
+        $handlers = new DefaultIterator($this->handlers->getItems());
         $handlers->rewind();
 
-        while($handlers->valid()) {
+        while ($handlers->valid()) {
 
             $handler = $handlers->current();
             $handlers->next();
@@ -64,26 +59,25 @@ class ChainHandler
             $handlerClass = new \ReflectionClass($handler['class']);
 
             if (empty($handler['dependencies'])) {
-                $arguments = [$this->chain];
-                $this->chain = $handlerClass->newInstanceArgs($arguments);
+                $this->applyHandler($handlerClass);
                 continue;
             }
 
-            $arguments = $handler['dependencies'];
-            array_unshift($arguments, $this->chain);
-            $this->chain = $handlerClass->newInstanceArgs($arguments);
-
+            $this->applyHandlerWithDependencies($handlerClass, $handler['dependencies']);
         }
 
     }
 
-    public function __construct(array $incomeData)
+    private function applyHandler(\ReflectionClass $handlerClass): void
     {
+        $arguments = [$this->chain];
+        $this->chain = $handlerClass->newInstanceArgs($arguments);
+    }
 
-        $this->incomeData = $incomeData;
-        $this->statements();
-        $this->populate();
-
+    private function applyHandlerWithDependencies(\ReflectionClass $handlerClass, array $dependencies): void
+    {
+        array_unshift($dependencies, $this->chain);
+        $this->chain = $handlerClass->newInstanceArgs($dependencies);
     }
 
     public function chain(): UpstreamHandler

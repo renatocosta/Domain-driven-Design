@@ -36,7 +36,7 @@ abstract class AggregateRoot
 
     public function __toString(): string
     {
-        return (string) $this->aggregateRootIdentifier->getId();
+        return (string)$this->aggregateRootIdentifier->getId();
     }
 
 }

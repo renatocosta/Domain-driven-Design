@@ -5,9 +5,6 @@ namespace Tests\BankSlipCoreDomain\Model\Specification;
 use BankSlipCoreDomain\Model\Document\Factories\DocumentFactory;
 use BankSlipCoreDomain\Model\Document\Factories\StatusIdFactory;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
-use CrossCutting\Domain\Model\Specification\AndSpecification;
-use CrossCutting\Domain\Model\Specification\NotSpecification;
-use CrossCutting\Domain\Model\Specification\OrSpecification;
 use Tests\BaseUnitTestCase;
 
 class SpecificationTest extends BaseUnitTestCase
@@ -20,8 +17,8 @@ class SpecificationTest extends BaseUnitTestCase
 
         $mockDocumentRepository = \Mockery::mock('BankSlipCoreDomain\Infrastructure\Persistence\Repositories\DocumentRepositoryInMemory');
         $mockDocumentRepository->shouldReceive('countFor')
-        ->once()
-        ->andReturn(0);
+            ->once()
+            ->andReturn(0);
 
         $specBarCodeUnique = new BarCodeUnique($mockDocumentRepository);
         $this->assertTrue($specBarCodeUnique->isSatisfiedBy($document));

@@ -13,6 +13,11 @@ class EndpointsEnum
 
     public const CORE_LEGACY_TED = '/core-legacy/ted';
 
-    public const NAMES = [self::CNAB_MANAGER_REMITTANCE, self::CNAB_MANAGER_DISCHARGE, self::CORE_LEGACY_TEF, self::CORE_LEGACY_TED];
+    public const NAMES = [
+        self::CNAB_MANAGER_REMITTANCE,
+        self::CNAB_MANAGER_DISCHARGE,
+        self::CORE_LEGACY_TEF,
+        self::CORE_LEGACY_TED
+    ];
 
 }

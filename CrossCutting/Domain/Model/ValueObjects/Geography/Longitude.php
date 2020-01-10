@@ -24,7 +24,7 @@ class Longitude
 
     public function value(): float
     {
-       return $this->value;
+        return $this->value;
     }
 
 }

@@ -21,7 +21,7 @@ abstract class AbstractEvent implements EventInterface
      * @var \DateTimeImmutable
      */
     private $createdAt;
-    
+
     public function __construct(Identified $aggregateRootIdentifier)
     {
         $this->aggregateRootIdentifier = $aggregateRootIdentifier;
@@ -49,5 +49,5 @@ abstract class AbstractEvent implements EventInterface
     {
         return $this->createdAt;
     }
-    
+
 }

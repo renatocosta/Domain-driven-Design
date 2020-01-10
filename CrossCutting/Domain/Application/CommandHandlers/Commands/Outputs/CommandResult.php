@@ -11,7 +11,7 @@ class CommandResult implements ICommandResult
 
     private $data;
 
-    public function  __construct(bool $success, string $message, array $data)
+    public function __construct(bool $success, string $message, array $data)
     {
         $this->success = $success;
         $this->message = $message;
@@ -25,7 +25,7 @@ class CommandResult implements ICommandResult
 
     public function message(): string
     {
-       return $this->message;
+        return $this->message;
     }
 
     public function data(): array

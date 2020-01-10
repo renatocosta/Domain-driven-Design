@@ -24,7 +24,7 @@ class Latitude
 
     public function value(): float
     {
-       return $this->value;
+        return $this->value;
     }
 
 }

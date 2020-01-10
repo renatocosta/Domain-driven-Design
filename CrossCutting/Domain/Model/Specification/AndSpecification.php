@@ -20,7 +20,7 @@ class AndSpecification extends CompositeSpecification
      */
     public function __construct(Specification $one, Specification $other)
     {
-        $this->one   = $one;
+        $this->one = $one;
         $this->other = $other;
     }
 

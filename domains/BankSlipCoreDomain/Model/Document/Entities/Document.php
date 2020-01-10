@@ -3,8 +3,8 @@
 namespace BankSlipCoreDomain\Model\Document\Entities;
 
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
-use BankSlipCoreDomain\Model\Document\Scopes\DocumentScopes;
 use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
+use BankSlipCoreDomain\Model\Document\Scopes\DocumentScopes;
 use CrossCutting\Domain\Model\Event\ValueObjects\AggregateRoot;
 use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
 
@@ -52,7 +52,7 @@ class Document extends AggregateRoot
         $this->checkDueDateLessOrEqualThanNow();
 
         if (!$this->isValid()) {
-           return;
+            return;
         }
 
         $this->apply(
@@ -79,7 +79,7 @@ class Document extends AggregateRoot
     private function checkDueDateLessOrEqualThanNow(): void
     {
 
-        if(strtotime($this->dueDate) <= strtotime(date('Y-m-d'))) {
+        if (strtotime($this->dueDate) <= strtotime(date('Y-m-d'))) {
             $this->errors[] = 'Due Date must be greater than now!';
         }
 

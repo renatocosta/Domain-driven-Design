@@ -19,15 +19,15 @@ class NewDocumentCommand implements ICommand
 
     public function __construct(string $barCode, string $dueDate)
     {
-       $this->barCode = $barCode;
-       $this->dueDate = $dueDate;
+        $this->barCode = $barCode;
+        $this->dueDate = $dueDate;
     }
 
     public function asArray(): array
     {
         return [
-            'dueDate'  => $this->dueDate,
-            'barCode'  => $this->barCode
+            'dueDate' => $this->dueDate,
+            'barCode' => $this->barCode
         ];
     }
 

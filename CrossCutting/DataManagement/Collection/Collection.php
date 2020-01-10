@@ -2,15 +2,15 @@
 
 namespace CrossCutting\DataManagement\Collection;
 
-class Collection implements ItemAggregator
+class Collection implements ItemsAggregator
 {
 
-    /** @var \Iterator  */
+    /** @var \Iterator */
     private $items;
 
     public function __construct()
     {
-       $this->items = new \SplDoublyLinkedList();
+        $this->items = new \SplDoublyLinkedList();
     }
 
     public function getIterator(): \Iterator

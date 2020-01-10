@@ -21,17 +21,17 @@ class CollectionTest extends BaseUnitTestCase
     public function testItemsCollectionWithItemElements()
     {
         $collection = new Collection();
-        $collection->add(['class' =>  \stdClass::class]);
-        $collection->add(['class' =>  \stdClass::class, 'dependencies' => []]);
+        $collection->add(['class' => \stdClass::class]);
+        $collection->add(['class' => \stdClass::class, 'dependencies' => []]);
 
 
         $iterator = $collection->getIterator();
         $iterator->rewind();
 
         $this->assertEquals(new DefaultIterator($collection->getItems()), $iterator);
-        $this->assertEquals(['class' =>  \stdClass::class], $collection->getItems()->current());
+        $this->assertEquals(['class' => \stdClass::class], $collection->getItems()->current());
         $iterator->next();
-        $this->assertEquals(['class' =>  \stdClass::class, 'dependencies' => []], $collection->getItems()->current());
+        $this->assertEquals(['class' => \stdClass::class, 'dependencies' => []], $collection->getItems()->current());
         $this->assertEquals(2, $collection->count());
     }
 

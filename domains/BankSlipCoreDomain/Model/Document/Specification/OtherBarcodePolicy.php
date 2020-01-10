@@ -9,7 +9,7 @@ class OtherBarcodePolicy implements IBarcodePolicy
 
     public function __construct(string $barCode)
     {
-      $this->barcodeParts = explode(' ', $barCode);
+        $this->barcodeParts = explode(' ', $barCode);
     }
 
     public function isValidParts(): bool
