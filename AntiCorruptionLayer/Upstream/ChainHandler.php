@@ -28,7 +28,7 @@ class ChainHandler
 
         $this->incomeData = $incomeData;
         $this->statements();
-        $this->apply();
+        $this->build();
 
     }
 
@@ -40,12 +40,12 @@ class ChainHandler
 
     }
 
-    private function apply(): void
+    private function build(): void
     {
 
         $this->chain = null;
         $handlers = new DefaultIterator($this->handlers->getItems());
-        
+
         while ($handlers->valid()) {
 
             $handler = $handlers->current();
@@ -62,7 +62,7 @@ class ChainHandler
                 continue;
             }
 
-            $this->applyHandlerWithDependencies($handlerClass, $handler['dependencies']);
+            $this->applyHandlerWith($handlerClass, $handler['dependencies']);
         }
 
     }
@@ -73,7 +73,7 @@ class ChainHandler
         $this->chain = $handlerClass->newInstanceArgs($arguments);
     }
 
-    private function applyHandlerWithDependencies(\ReflectionClass $handlerClass, array $dependencies): void
+    private function applyHandlerWith(\ReflectionClass $handlerClass, array $dependencies): void
     {
         array_unshift($dependencies, $this->chain);
         $this->chain = $handlerClass->newInstanceArgs($dependencies);

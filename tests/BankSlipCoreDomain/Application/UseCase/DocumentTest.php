@@ -4,6 +4,7 @@ namespace Tests\BankSlipCoreDomain\Application\UseCase;
 
 use BankSlipCoreDomain\Application\Document\CommandHandlers\Commands\Inputs\NewDocumentCommand;
 use BankSlipCoreDomain\Application\Document\CommandHandlers\DocumentHandler;
+use CrossCutting\Domain\Application\Event\Bus\DomainEventBus;
 use BankSlipCoreDomain\Infrastructure\Services\Email;
 use BankSlipCoreDomain\Infrastructure\Transaction\UnitOfWorkContext;
 use BankSlipCoreDomain\Model\Document\Specification\BarCodeUnique;
@@ -28,7 +29,7 @@ class DocumentTest extends BaseUnitTestCase
             ->andReturn(0);
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
-        $documentHandler = new DocumentHandler(new Email(), $barCodeUnique);
+        $documentHandler = new DocumentHandler(new Email(), $barCodeUnique, new DomainEventBus());
 
         $transactionalHandler = new TransactionalHandler($documentHandler, new UnitOfWorkContext());
         $result = $transactionalHandler->handle($command);
@@ -52,7 +53,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
 
-        $handlers = new DocumentHandler(new Email(), $barCodeUnique);
+        $handlers = new DocumentHandler(new Email(), $barCodeUnique, new DomainEventBus());
         $result = $handlers->handle($command);
 
         $this->assertFalse($result->success());
@@ -74,7 +75,7 @@ class DocumentTest extends BaseUnitTestCase
 
         $barCodeUnique = new BarCodeUnique($mockDocumentRepository);
 
-        $handlers = new DocumentHandler(new Email(), $barCodeUnique);
+        $handlers = new DocumentHandler(new Email(), $barCodeUnique, new DomainEventBus());
         $result = $handlers->handle($command);
 
         $this->assertFalse($result->success());

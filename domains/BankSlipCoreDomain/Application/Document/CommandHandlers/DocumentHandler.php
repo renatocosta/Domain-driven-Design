@@ -12,6 +12,7 @@ use CrossCutting\Domain\Application\CommandHandlers\Commands\Inputs\ICommand;
 use CrossCutting\Domain\Application\CommandHandlers\Commands\Outputs\CommandResult;
 use CrossCutting\Domain\Application\CommandHandlers\Commands\Outputs\ICommandResult;
 use CrossCutting\Domain\Application\CommandHandlers\ICommandHandler;
+use CrossCutting\Domain\Application\Event\Bus\DomainEventBus;
 use CrossCutting\Domain\Infrastructure\Services\IEmailService;
 
 class DocumentHandler implements ICommandHandler
@@ -21,12 +22,16 @@ class DocumentHandler implements ICommandHandler
 
     private $barCodeUniqueSpec;
 
+    private $domainEventBus;
+
     public function __construct(
         IEmailService $emailService,
-        BarCodeUnique $barCodeUniqueSpec
+        BarCodeUnique $barCodeUniqueSpec,
+        DomainEventBus $domainEventBus
     ) {
         $this->emailService = $emailService;
         $this->barCodeUniqueSpec = $barCodeUniqueSpec;
+        $this->domainEventBus = $domainEventBus;
     }
 
     /**
@@ -37,7 +42,7 @@ class DocumentHandler implements ICommandHandler
     {
 
         $status = StatusIdFactory::create();
-        $document = DocumentFactory::create($status, $command->dueDate, $command->barCode);
+        $document = DocumentFactory::create($status, $command->dueDate, $command->barCode, $this->domainEventBus);
 
         if (!$document->isValid()) {
             return new CommandResult(false, 'Algumas incosistências foram identificadas', $document->fetchErrors());

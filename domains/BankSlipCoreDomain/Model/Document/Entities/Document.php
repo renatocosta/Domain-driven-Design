@@ -5,6 +5,7 @@ namespace BankSlipCoreDomain\Model\Document\Entities;
 use BankSlipCoreDomain\Model\Document\Entities\ValueObjects\StatusId;
 use BankSlipCoreDomain\Model\Document\Entity\DocumentWasCreated;
 use BankSlipCoreDomain\Model\Document\Scopes\DocumentScopes;
+use CrossCutting\Domain\Application\Event\Bus\DomainEventBus;
 use CrossCutting\Domain\Model\Event\ValueObjects\AggregateRoot;
 use CrossCutting\Domain\Model\ValueObjects\Identity\Identified;
 
@@ -36,9 +37,9 @@ class Document extends AggregateRoot
      */
     private $errors = [];
 
-    public function __construct(Identified $aggregateRootIdentifier)
+    public function __construct(Identified $aggregateRootIdentifier, DomainEventBus $domainEventBus)
     {
-        parent::__construct($aggregateRootIdentifier);
+        parent::__construct($aggregateRootIdentifier, $domainEventBus);
     }
 
     public function create(StatusId $statusId, string $dueDate, string $barCode)

@@ -14,9 +14,15 @@ abstract class AggregateRoot
      */
     protected $aggregateRootIdentifier;
 
-    protected function __construct(Identified $aggregateRootIdentifier)
+    /**
+     * @var DomainEventBus
+     */
+    protected $domainEventBus;
+
+    protected function __construct(Identified $aggregateRootIdentifier, DomainEventBus $domainEventBus)
     {
         $this->aggregateRootIdentifier = $aggregateRootIdentifier;
+        $this->domainEventBus = $domainEventBus;
     }
 
     public function getId(): Identified
@@ -31,7 +37,7 @@ abstract class AggregateRoot
 
     final protected function apply(EventInterface $event): void
     {
-        DomainEventBus::instance()->publish($event);
+        $this->domainEventBus->publish($event);
     }
 
     public function __toString(): string

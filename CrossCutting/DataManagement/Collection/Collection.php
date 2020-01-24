@@ -8,9 +8,10 @@ class Collection implements ItemsAggregator
     /** @var \Iterator */
     private $items;
 
-    public function __construct()
+    public function __construct($iteratorMode = \SplDoublyLinkedList::IT_MODE_KEEP)
     {
         $this->items = new \SplDoublyLinkedList();
+        $this->items->setIteratorMode($iteratorMode);
     }
 
     public function getIterator(): \Iterator

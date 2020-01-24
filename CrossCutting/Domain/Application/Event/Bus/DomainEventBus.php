@@ -20,26 +20,10 @@ class DomainEventBus
      */
     private $iterator;
 
-    /**
-     * @var DomainEventBus
-     */
-    private static $instance = null;
-
-    public static function instance(): self
-    {
-
-        if (null === static::$instance) {
-            static::$instance = new self();
-        }
-
-        return static::$instance;
-    }
-
-    private function __construct()
+    public function __construct()
     {
         $this->eventHandlers = new Collection();
         $this->iterator = $this->eventHandlers->getIterator();
-        $this->iterator->rewind();
     }
 
     public function __clone()
@@ -61,6 +45,7 @@ class DomainEventBus
 
             if ($eventHandler->isSubscribedTo($aDomainEvent)) {
                 $eventHandler->handle($aDomainEvent);
+                break;
             }
 
             $this->iterator->next();

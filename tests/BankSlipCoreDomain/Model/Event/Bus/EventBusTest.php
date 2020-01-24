@@ -33,17 +33,20 @@ class EventBusTest extends TestCase
 
     public function testShouldFailToUnsubscribedEventInHandler()
     {
+
+        $domainEventBus = new DomainEventBus();
+
         $dtActual = date('Y-m-d');
         $dueDate = date('Y-m-d', strtotime($dtActual . ' - 1 month'));
 
         $entityEventHandler = new DocumentWasCreatedEventHandler($this->mockDocumentRepository,
             $this->mockEnrollRepository);
         $status = StatusIdFactory::create();
-        $document = DocumentFactory::create($status, $dueDate, '0937373333');
+        $document = DocumentFactory::create($status, $dueDate, '0937373333', $domainEventBus);
         $entityEvent = new DocumentWasChanged($document);
 
-        DomainEventBus::instance()->subscribe($entityEventHandler);
-        DomainEventBus::instance()->publish($entityEvent);
+        $domainEventBus->subscribe($entityEventHandler);
+        $domainEventBus->publish($entityEvent);
 
         $this->assertFalse($entityEventHandler->isSubscribedTo($entityEvent));
     }
@@ -51,12 +54,14 @@ class EventBusTest extends TestCase
     public function testShouldSubscribeEventInHandler()
     {
 
+        $domainEventBus = new DomainEventBus();
+
         $dtActual = date('Y-m-d');
         $dueDate = date('Y-m-d', strtotime($dtActual . ' + 1 month'));
         $entityEventHandler = new DocumentWasCreatedEventHandler($this->mockDocumentRepository,
             $this->mockEnrollRepository);
         $status = StatusIdFactory::create();
-        $document = DocumentFactory::create($status, $dueDate, '0937373333');
+        $document = DocumentFactory::create($status, $dueDate, '0937373333', $domainEventBus);
         $entityEvent = new DocumentWasCreated($document);
 
         $this->assertTrue($entityEventHandler->isSubscribedTo($entityEvent));
