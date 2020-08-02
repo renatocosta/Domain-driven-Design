@@ -31,12 +31,12 @@ class DomainEventBus
         throw new \BadMethodCallException('Clone is not supported');
     }
 
-    public function subscribe(DomainEventHandler $aDomainEventHandler): void
+    final public function subscribe(DomainEventHandler $aDomainEventHandler): void
     {
         $this->eventHandlers->add($aDomainEventHandler);
     }
 
-    public function publish(AbstractEvent $aDomainEvent): void
+    final public function publish(AbstractEvent $aDomainEvent): void
     {
 
         while ($this->iterator->valid()) {
