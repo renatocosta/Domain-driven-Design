@@ -57,7 +57,7 @@ Modelagem, classificação e diagramas inter relacionados.
 # Relacionamento entre os domínios
 ### Shared Kernel<br>
 Um contexto compartilhado entre outros contextos, o shared kernel é um tipo de contexto onde N bounded contexts dependem dele, uma espécie de Core, este tipo de contexto não pode ser alterado sem consultar todos os times de desenvolvimento que dependem dele.<br>
-[Exemplo](domains/SharedKernel)
+[Exemplo](src/Domain.SharedKernel)
 ### Customer/Supplier<br>
 Contextos customer dependem de contextos supplier.<br>
 A equipe downstream atua como cliente (customer) da equipe upstream (supplier). As equipes definem testes de aceitação automatizados que validam as interfaces que a equipe upstream fornecem. A equipe upstream pode então fazer alterações em seu código sem medo de quebrar alguma coisa da equipe downstream.<br>
@@ -72,4 +72,4 @@ Neste cenário a equipe downstream desenvolve uma camada adicional anti-corrupç
 Uma camada a parte que não obedece a hierarquia de camada. Como o próprio nome diz, essa camada cruza toda a hierarquia. Contém as funcionalidades que pode ser utilizada em qualquer parte do código, como, por exemplo, validação de CPF/CNPJ, consumo de API externa e utilização de alguma segurança.<br>
 [Exemplo](CrossCutting)
 # Exemplo real baseado no Bills decomposto<br>
-[domains](domains)
+[domains](src)

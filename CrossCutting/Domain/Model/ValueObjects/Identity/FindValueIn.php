@@ -16,6 +16,9 @@ class FindValueIn
 
     }
 
+    /**
+     * @return mixed
+     */
     public function value()
     {
         return $this->value;
