@@ -21,7 +21,7 @@
   "autoload": {
     "classmap": [
       "AntiCorruptionLayer",
-      "domains",
+      "src",
       "CrossCutting"
     ],
     "psr-4": {
